@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://thebee.fun/Gallery/index.html</loc>
+    
+    <lastmod>2020-03-30T13:18:04.991Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://thebee.fun/2020/03/30/bee22/</loc>
     
-    <lastmod>2020-03-30T08:18:19.610Z</lastmod>
+    <lastmod>2020-03-30T13:15:28.435Z</lastmod>
     
   </url>
   
@@ -180,13 +187,6 @@
     <loc>http://thebee.fun/music/index.html</loc>
     
     <lastmod>2020-03-19T03:34:12.999Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://thebee.fun/Gallery/index.html</loc>
-    
-    <lastmod>2020-03-01T06:43:38.000Z</lastmod>
     
   </url>
   
