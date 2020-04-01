@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://thebee.fun/about/index.html</loc>
+    
+    <lastmod>2020-04-01T08:44:10.458Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://thebee.fun/2020/03/25/bee20/</loc>
+    
+    <lastmod>2020-04-01T08:16:09.209Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://thebee.fun/2020/03/27/bee21/</loc>
     
     <lastmod>2020-04-01T07:44:10.383Z</lastmod>
@@ -135,13 +149,6 @@
   </url>
   
   <url>
-    <loc>http://thebee.fun/2020/03/25/bee20/</loc>
-    
-    <lastmod>2020-03-27T12:25:06.305Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://thebee.fun/2020/03/09/bee17/</loc>
     
     <lastmod>2020-03-27T10:27:00.463Z</lastmod>
@@ -166,13 +173,6 @@
     <loc>http://thebee.fun/movies/index.html</loc>
     
     <lastmod>2020-03-26T06:17:23.656Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://thebee.fun/about/index.html</loc>
-    
-    <lastmod>2020-03-24T06:14:16.370Z</lastmod>
     
   </url>
   
