@@ -1,0 +1,946 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>游戏介绍    SNK系列——《侍魂系列》 | The Bee</title><meta name="description" content="游戏介绍    SNK系列——《侍魂系列》"><meta name="keywords" content="游戏,SNK,格斗"><meta name="author" content="Bee"><meta name="copyright" content="Bee"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://hm.baidu.com"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="baidu-site-verification" content="FTFYOEigTG.182.92.161.59"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="游戏介绍    SNK系列——《侍魂系列》"><meta name="twitter:description" content="游戏介绍    SNK系列——《侍魂系列》"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee31.png"><meta property="og:type" content="article"><meta property="og:title" content="游戏介绍    SNK系列——《侍魂系列》"><meta property="og:url" content="http://thebee.fun/2020/04/11/bee31/"><meta property="og:site_name" content="The Bee"><meta property="og:description" content="游戏介绍    SNK系列——《侍魂系列》"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee31.png"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="http://thebee.fun/2020/04/11/bee31/"><link rel="next" title="人物志 《火影忍者》—— 宇智波鼬" href="http://thebee.fun/2020/04/09/bee30/"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5d2e9f29767fc616cb34043759adad23";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":17,"cookieDomain":"http://thebee.fun/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#F47378","bgDark":"#A349A4","position":"bottom-center"},
+  baiduPush: true,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">The Bee</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 時光機</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 个人标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-paper-plane" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 图片</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fa fa-television"></i><span> 番剧</span></a></li><li><a class="site-page" href="/player/"><i class="fa-fw fa fa-gamepad"></i><span> 艺类</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">34</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">73</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">17</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 時光機</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 个人标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-paper-plane" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 图片</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fa fa-television"></i><span> 番剧</span></a></li><li><a class="site-page" href="/player/"><i class="fa-fw fa fa-gamepad"></i><span> 艺类</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#介绍"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">介绍</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#游戏特色"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">游戏特色</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#游戏版本"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">游戏版本</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#角色介绍"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">角色介绍</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#《侍魂》（1993）"><span class="toc_mobile_items-number">4.1.</span> <span class="toc_mobile_items-text">《侍魂》（1993）</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#霸王丸"><span class="toc_mobile_items-number">4.1.1.</span> <span class="toc_mobile_items-text">霸王丸</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#娜可露露（ナコルル）"><span class="toc_mobile_items-number">4.1.2.</span> <span class="toc_mobile_items-text">娜可露露（ナコルル）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#橘右京"><span class="toc_mobile_items-number">4.1.3.</span> <span class="toc_mobile_items-text">橘右京</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#千两狂死郎"><span class="toc_mobile_items-number">4.1.4.</span> <span class="toc_mobile_items-text">千两狂死郎</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#夏洛特"><span class="toc_mobile_items-number">4.1.5.</span> <span class="toc_mobile_items-text">夏洛特</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#服部半藏"><span class="toc_mobile_items-number">4.1.6.</span> <span class="toc_mobile_items-text">服部半藏</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#加尔福特"><span class="toc_mobile_items-number">4.1.7.</span> <span class="toc_mobile_items-text">加尔福特</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#天草四郎时贞"><span class="toc_mobile_items-number">4.1.8.</span> <span class="toc_mobile_items-text">天草四郎时贞</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#塔姆塔姆"><span class="toc_mobile_items-number">4.1.9.</span> <span class="toc_mobile_items-text">塔姆塔姆</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#柳生十兵卫"><span class="toc_mobile_items-number">4.1.10.</span> <span class="toc_mobile_items-text">柳生十兵卫</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#王虎"><span class="toc_mobile_items-number">4.1.11.</span> <span class="toc_mobile_items-text">王虎</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#不知火幻庵"><span class="toc_mobile_items-number">4.1.12.</span> <span class="toc_mobile_items-text">不知火幻庵</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#地震-地雷震"><span class="toc_mobile_items-number">4.1.13.</span> <span class="toc_mobile_items-text">地震(地雷震)</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#真侍魂：霸王丸地狱变"><span class="toc_mobile_items-number">4.2.</span> <span class="toc_mobile_items-text">真侍魂：霸王丸地狱变</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#牙神幻十郎"><span class="toc_mobile_items-number">4.2.1.</span> <span class="toc_mobile_items-text">牙神幻十郎</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#莱因哈特．斯卡（莱锡路）"><span class="toc_mobile_items-number">4.2.2.</span> <span class="toc_mobile_items-text">莱因哈特．斯卡（莱锡路）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#花讽院和狆"><span class="toc_mobile_items-number">4.2.3.</span> <span class="toc_mobile_items-text">花讽院和狆</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#黑子"><span class="toc_mobile_items-number">4.2.4.</span> <span class="toc_mobile_items-text">黑子</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#查姆查姆"><span class="toc_mobile_items-number">4.2.5.</span> <span class="toc_mobile_items-text">查姆查姆</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#罗将神水姬（罗将神美州姬）"><span class="toc_mobile_items-number">4.2.6.</span> <span class="toc_mobile_items-text">罗将神水姬（罗将神美州姬）</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：斩红郞无双剑"><span class="toc_mobile_items-number">4.3.</span> <span class="toc_mobile_items-text">侍魂：斩红郞无双剑</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#首斩破沙罗"><span class="toc_mobile_items-number">4.3.1.</span> <span class="toc_mobile_items-text">首斩破沙罗</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#花讽院骸罗（金雄载）"><span class="toc_mobile_items-number">4.3.2.</span> <span class="toc_mobile_items-text">花讽院骸罗（金雄载）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#莉姆露露"><span class="toc_mobile_items-number">4.3.3.</span> <span class="toc_mobile_items-text">莉姆露露</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#壬无月斩红郎"><span class="toc_mobile_items-number">4.3.4.</span> <span class="toc_mobile_items-text">壬无月斩红郎</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#绯雨闲丸"><span class="toc_mobile_items-number">4.3.5.</span> <span class="toc_mobile_items-text">绯雨闲丸</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：天草降临"><span class="toc_mobile_items-number">4.4.</span> <span class="toc_mobile_items-text">侍魂：天草降临</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#风间火月"><span class="toc_mobile_items-number">4.4.1.</span> <span class="toc_mobile_items-text">风间火月</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#风间苍月"><span class="toc_mobile_items-number">4.4.2.</span> <span class="toc_mobile_items-text">风间苍月</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂RPG：真说武士道烈传"><span class="toc_mobile_items-number">4.5.</span> <span class="toc_mobile_items-text">侍魂RPG：真说武士道烈传</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#疾风之铃音"><span class="toc_mobile_items-number">4.5.1.</span> <span class="toc_mobile_items-text">疾风之铃音</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#牛若姫"><span class="toc_mobile_items-number">4.5.2.</span> <span class="toc_mobile_items-text">牛若姫</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#时姫"><span class="toc_mobile_items-number">4.5.3.</span> <span class="toc_mobile_items-text">时姫</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#烈风之飞音"><span class="toc_mobile_items-number">4.5.4.</span> <span class="toc_mobile_items-text">烈风之飞音</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#破怨"><span class="toc_mobile_items-number">4.5.5.</span> <span class="toc_mobile_items-text">破怨</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂64"><span class="toc_mobile_items-number">4.6.</span> <span class="toc_mobile_items-text">侍魂64</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#坏帝尤加"><span class="toc_mobile_items-number">4.6.1.</span> <span class="toc_mobile_items-text">坏帝尤加</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#木偶"><span class="toc_mobile_items-number">4.6.2.</span> <span class="toc_mobile_items-text">木偶</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#柳生磐马"><span class="toc_mobile_items-number">4.6.3.</span> <span class="toc_mobile_items-text">柳生磐马</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#严陀罗"><span class="toc_mobile_items-number">4.6.4.</span> <span class="toc_mobile_items-text">严陀罗</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#色"><span class="toc_mobile_items-number">4.6.5.</span> <span class="toc_mobile_items-text">色</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂64：阿修罗斩魔传"><span class="toc_mobile_items-number">4.7.</span> <span class="toc_mobile_items-text">侍魂64：阿修罗斩魔传</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#水邪"><span class="toc_mobile_items-number">4.7.1.</span> <span class="toc_mobile_items-text">水邪</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#炎邪"><span class="toc_mobile_items-number">4.7.2.</span> <span class="toc_mobile_items-text">炎邪</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#八角泰山"><span class="toc_mobile_items-number">4.7.3.</span> <span class="toc_mobile_items-text">八角泰山</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#阿修罗（阿斯拉）"><span class="toc_mobile_items-number">4.7.4.</span> <span class="toc_mobile_items-text">阿修罗（阿斯拉）</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：剑客异闻录-苏醒的苍红之刃（不细讲）"><span class="toc_mobile_items-number">4.8.</span> <span class="toc_mobile_items-text">侍魂：剑客异闻录 苏醒的苍红之刃（不细讲）</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#九葵苍志狼"><span class="toc_mobile_items-number">4.8.1.</span> <span class="toc_mobile_items-text">九葵苍志狼</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#九鬼刀马"><span class="toc_mobile_items-number">4.8.2.</span> <span class="toc_mobile_items-text">九鬼刀马</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#命"><span class="toc_mobile_items-number">4.8.3.</span> <span class="toc_mobile_items-text">命</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#幽堕"><span class="toc_mobile_items-number">4.8.4.</span> <span class="toc_mobile_items-text">幽堕</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#胧"><span class="toc_mobile_items-number">4.8.5.</span> <span class="toc_mobile_items-text">胧</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#服部真藏"><span class="toc_mobile_items-number">4.8.6.</span> <span class="toc_mobile_items-text">服部真藏</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#旋风卧龙"><span class="toc_mobile_items-number">4.8.7.</span> <span class="toc_mobile_items-text">旋风卧龙</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#花房迅卫门"><span class="toc_mobile_items-number">4.8.8.</span> <span class="toc_mobile_items-text">花房迅卫门</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#十六薙夜血（十六剃夜血）"><span class="toc_mobile_items-number">4.8.9.</span> <span class="toc_mobile_items-text">十六薙夜血（十六剃夜血）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#七坐灰人"><span class="toc_mobile_items-number">4.8.10.</span> <span class="toc_mobile_items-text">七坐灰人</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#乱凤"><span class="toc_mobile_items-number">4.8.11.</span> <span class="toc_mobile_items-text">乱凤</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#眠兔"><span class="toc_mobile_items-number">4.8.12.</span> <span class="toc_mobile_items-text">眠兔</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#榊铳士浪（龙巳十四郎）"><span class="toc_mobile_items-number">4.8.13.</span> <span class="toc_mobile_items-text">榊铳士浪（龙巳十四郎）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#吉野凛花（晓村）"><span class="toc_mobile_items-number">4.8.14.</span> <span class="toc_mobile_items-text">吉野凛花（晓村）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#沙耶"><span class="toc_mobile_items-number">4.8.15.</span> <span class="toc_mobile_items-text">沙耶</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#伊贺忍军"><span class="toc_mobile_items-number">4.8.16.</span> <span class="toc_mobile_items-text">伊贺忍军</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#侍"><span class="toc_mobile_items-number">4.8.17.</span> <span class="toc_mobile_items-text">侍</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#陀流磨"><span class="toc_mobile_items-number">4.8.18.</span> <span class="toc_mobile_items-text">陀流磨</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#胧众"><span class="toc_mobile_items-number">4.8.19.</span> <span class="toc_mobile_items-text">胧众</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#大熊猫"><span class="toc_mobile_items-number">4.8.20.</span> <span class="toc_mobile_items-text">大熊猫</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#无限示"><span class="toc_mobile_items-number">4.8.21.</span> <span class="toc_mobile_items-text">无限示</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：零"><span class="toc_mobile_items-number">4.9.</span> <span class="toc_mobile_items-text">侍魂：零</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#德川庆寅"><span class="toc_mobile_items-number">4.9.1.</span> <span class="toc_mobile_items-text">德川庆寅</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#妖怪腐外道"><span class="toc_mobile_items-number">4.9.2.</span> <span class="toc_mobile_items-text">妖怪腐外道</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#万-三九六"><span class="toc_mobile_items-number">4.9.3.</span> <span class="toc_mobile_items-text">万 三九六</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#罗刹丸"><span class="toc_mobile_items-number">4.9.4.</span> <span class="toc_mobile_items-text">罗刹丸</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#蕾娜（-蕾拉）"><span class="toc_mobile_items-number">4.9.5.</span> <span class="toc_mobile_items-text">蕾娜（    蕾拉）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#黑河内梦路"><span class="toc_mobile_items-number">4.9.6.</span> <span class="toc_mobile_items-text">黑河内梦路</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#凶国日轮守我旺"><span class="toc_mobile_items-number">4.9.7.</span> <span class="toc_mobile_items-text">凶国日轮守我旺</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#刘云飞"><span class="toc_mobile_items-number">4.9.8.</span> <span class="toc_mobile_items-text">刘云飞</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#真镜名·弥娜"><span class="toc_mobile_items-number">4.9.9.</span> <span class="toc_mobile_items-text">真镜名·弥娜</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：天下一剑客传"><span class="toc_mobile_items-number">4.10.</span> <span class="toc_mobile_items-text">侍魂：天下一剑客传</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#机巧麻吕"><span class="toc_mobile_items-number">4.10.1.</span> <span class="toc_mobile_items-text">机巧麻吕</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#祭囃子双六"><span class="toc_mobile_items-number">4.10.2.</span> <span class="toc_mobile_items-text">祭囃子双六</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#安德鲁"><span class="toc_mobile_items-number">4.10.3.</span> <span class="toc_mobile_items-text">安德鲁</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#伊吕波"><span class="toc_mobile_items-number">4.10.4.</span> <span class="toc_mobile_items-text">伊吕波</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#真．我旺"><span class="toc_mobile_items-number">4.10.5.</span> <span class="toc_mobile_items-text">真．我旺</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：闪"><span class="toc_mobile_items-number">4.11.</span> <span class="toc_mobile_items-text">侍魂：闪</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#猛千代"><span class="toc_mobile_items-number">4.11.1.</span> <span class="toc_mobile_items-text">猛千代</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#铃姫"><span class="toc_mobile_items-number">4.11.2.</span> <span class="toc_mobile_items-text">铃姫</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#黑鹰"><span class="toc_mobile_items-number">4.11.3.</span> <span class="toc_mobile_items-text">黑鹰</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#安洁莉卡"><span class="toc_mobile_items-number">4.11.4.</span> <span class="toc_mobile_items-text">安洁莉卡</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#奇里安（吉利安）"><span class="toc_mobile_items-number">4.11.5.</span> <span class="toc_mobile_items-text">奇里安（吉利安）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#格罗斯（加洛斯）"><span class="toc_mobile_items-number">4.11.6.</span> <span class="toc_mobile_items-text">格罗斯（加洛斯）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#克劳德（克洛德）"><span class="toc_mobile_items-number">4.11.7.</span> <span class="toc_mobile_items-text">克劳德（克洛德）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#J"><span class="toc_mobile_items-number">4.11.8.</span> <span class="toc_mobile_items-text">J</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#金海澪"><span class="toc_mobile_items-number">4.11.9.</span> <span class="toc_mobile_items-text">金海澪</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#菅又刃兵卫"><span class="toc_mobile_items-number">4.11.10.</span> <span class="toc_mobile_items-text">菅又刃兵卫</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#维尔达"><span class="toc_mobile_items-number">4.11.11.</span> <span class="toc_mobile_items-text">维尔达</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#德拉古"><span class="toc_mobile_items-number">4.11.12.</span> <span class="toc_mobile_items-text">德拉古</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#戈巴"><span class="toc_mobile_items-number">4.11.13.</span> <span class="toc_mobile_items-text">戈巴</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#侍魂：晓"><span class="toc_mobile_items-number">4.12.</span> <span class="toc_mobile_items-text">侍魂：晓</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#吴瑞香"><span class="toc_mobile_items-number">4.12.1.</span> <span class="toc_mobile_items-text">吴瑞香</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#妲丽·刀伽"><span class="toc_mobile_items-number">4.12.2.</span> <span class="toc_mobile_items-text">妲丽·刀伽</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#鞍马夜叉丸"><span class="toc_mobile_items-number">4.12.3.</span> <span class="toc_mobile_items-text">鞍马夜叉丸</span></a></li></ol></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#游戏其他说明"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">游戏其他说明</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#游戏人物原型"><span class="toc_mobile_items-number">5.1.</span> <span class="toc_mobile_items-text">游戏人物原型</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#游研社-游戏分析"><span class="toc_mobile_items-number">5.2.</span> <span class="toc_mobile_items-text">游研社-游戏分析</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#官网"><span class="toc_mobile_items-number">5.3.</span> <span class="toc_mobile_items-text">官网</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#游戏评价"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text">游戏评价</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#介绍"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#游戏特色"><span class="toc-number">2.</span> <span class="toc-text">游戏特色</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#游戏版本"><span class="toc-number">3.</span> <span class="toc-text">游戏版本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#角色介绍"><span class="toc-number">4.</span> <span class="toc-text">角色介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#《侍魂》（1993）"><span class="toc-number">4.1.</span> <span class="toc-text">《侍魂》（1993）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#霸王丸"><span class="toc-number">4.1.1.</span> <span class="toc-text">霸王丸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#娜可露露（ナコルル）"><span class="toc-number">4.1.2.</span> <span class="toc-text">娜可露露（ナコルル）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#橘右京"><span class="toc-number">4.1.3.</span> <span class="toc-text">橘右京</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#千两狂死郎"><span class="toc-number">4.1.4.</span> <span class="toc-text">千两狂死郎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#夏洛特"><span class="toc-number">4.1.5.</span> <span class="toc-text">夏洛特</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服部半藏"><span class="toc-number">4.1.6.</span> <span class="toc-text">服部半藏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加尔福特"><span class="toc-number">4.1.7.</span> <span class="toc-text">加尔福特</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#天草四郎时贞"><span class="toc-number">4.1.8.</span> <span class="toc-text">天草四郎时贞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#塔姆塔姆"><span class="toc-number">4.1.9.</span> <span class="toc-text">塔姆塔姆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#柳生十兵卫"><span class="toc-number">4.1.10.</span> <span class="toc-text">柳生十兵卫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#王虎"><span class="toc-number">4.1.11.</span> <span class="toc-text">王虎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不知火幻庵"><span class="toc-number">4.1.12.</span> <span class="toc-text">不知火幻庵</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#地震-地雷震"><span class="toc-number">4.1.13.</span> <span class="toc-text">地震(地雷震)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#真侍魂：霸王丸地狱变"><span class="toc-number">4.2.</span> <span class="toc-text">真侍魂：霸王丸地狱变</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#牙神幻十郎"><span class="toc-number">4.2.1.</span> <span class="toc-text">牙神幻十郎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#莱因哈特．斯卡（莱锡路）"><span class="toc-number">4.2.2.</span> <span class="toc-text">莱因哈特．斯卡（莱锡路）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#花讽院和狆"><span class="toc-number">4.2.3.</span> <span class="toc-text">花讽院和狆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#黑子"><span class="toc-number">4.2.4.</span> <span class="toc-text">黑子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查姆查姆"><span class="toc-number">4.2.5.</span> <span class="toc-text">查姆查姆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#罗将神水姬（罗将神美州姬）"><span class="toc-number">4.2.6.</span> <span class="toc-text">罗将神水姬（罗将神美州姬）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：斩红郞无双剑"><span class="toc-number">4.3.</span> <span class="toc-text">侍魂：斩红郞无双剑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首斩破沙罗"><span class="toc-number">4.3.1.</span> <span class="toc-text">首斩破沙罗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#花讽院骸罗（金雄载）"><span class="toc-number">4.3.2.</span> <span class="toc-text">花讽院骸罗（金雄载）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#莉姆露露"><span class="toc-number">4.3.3.</span> <span class="toc-text">莉姆露露</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#壬无月斩红郎"><span class="toc-number">4.3.4.</span> <span class="toc-text">壬无月斩红郎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绯雨闲丸"><span class="toc-number">4.3.5.</span> <span class="toc-text">绯雨闲丸</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：天草降临"><span class="toc-number">4.4.</span> <span class="toc-text">侍魂：天草降临</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#风间火月"><span class="toc-number">4.4.1.</span> <span class="toc-text">风间火月</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#风间苍月"><span class="toc-number">4.4.2.</span> <span class="toc-text">风间苍月</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂RPG：真说武士道烈传"><span class="toc-number">4.5.</span> <span class="toc-text">侍魂RPG：真说武士道烈传</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#疾风之铃音"><span class="toc-number">4.5.1.</span> <span class="toc-text">疾风之铃音</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#牛若姫"><span class="toc-number">4.5.2.</span> <span class="toc-text">牛若姫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#时姫"><span class="toc-number">4.5.3.</span> <span class="toc-text">时姫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#烈风之飞音"><span class="toc-number">4.5.4.</span> <span class="toc-text">烈风之飞音</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#破怨"><span class="toc-number">4.5.5.</span> <span class="toc-text">破怨</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂64"><span class="toc-number">4.6.</span> <span class="toc-text">侍魂64</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#坏帝尤加"><span class="toc-number">4.6.1.</span> <span class="toc-text">坏帝尤加</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#木偶"><span class="toc-number">4.6.2.</span> <span class="toc-text">木偶</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#柳生磐马"><span class="toc-number">4.6.3.</span> <span class="toc-text">柳生磐马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#严陀罗"><span class="toc-number">4.6.4.</span> <span class="toc-text">严陀罗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#色"><span class="toc-number">4.6.5.</span> <span class="toc-text">色</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂64：阿修罗斩魔传"><span class="toc-number">4.7.</span> <span class="toc-text">侍魂64：阿修罗斩魔传</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#水邪"><span class="toc-number">4.7.1.</span> <span class="toc-text">水邪</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#炎邪"><span class="toc-number">4.7.2.</span> <span class="toc-text">炎邪</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#八角泰山"><span class="toc-number">4.7.3.</span> <span class="toc-text">八角泰山</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#阿修罗（阿斯拉）"><span class="toc-number">4.7.4.</span> <span class="toc-text">阿修罗（阿斯拉）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：剑客异闻录-苏醒的苍红之刃（不细讲）"><span class="toc-number">4.8.</span> <span class="toc-text">侍魂：剑客异闻录 苏醒的苍红之刃（不细讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#九葵苍志狼"><span class="toc-number">4.8.1.</span> <span class="toc-text">九葵苍志狼</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#九鬼刀马"><span class="toc-number">4.8.2.</span> <span class="toc-text">九鬼刀马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命"><span class="toc-number">4.8.3.</span> <span class="toc-text">命</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#幽堕"><span class="toc-number">4.8.4.</span> <span class="toc-text">幽堕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#胧"><span class="toc-number">4.8.5.</span> <span class="toc-text">胧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服部真藏"><span class="toc-number">4.8.6.</span> <span class="toc-text">服部真藏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#旋风卧龙"><span class="toc-number">4.8.7.</span> <span class="toc-text">旋风卧龙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#花房迅卫门"><span class="toc-number">4.8.8.</span> <span class="toc-text">花房迅卫门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#十六薙夜血（十六剃夜血）"><span class="toc-number">4.8.9.</span> <span class="toc-text">十六薙夜血（十六剃夜血）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#七坐灰人"><span class="toc-number">4.8.10.</span> <span class="toc-text">七坐灰人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#乱凤"><span class="toc-number">4.8.11.</span> <span class="toc-text">乱凤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#眠兔"><span class="toc-number">4.8.12.</span> <span class="toc-text">眠兔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#榊铳士浪（龙巳十四郎）"><span class="toc-number">4.8.13.</span> <span class="toc-text">榊铳士浪（龙巳十四郎）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#吉野凛花（晓村）"><span class="toc-number">4.8.14.</span> <span class="toc-text">吉野凛花（晓村）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#沙耶"><span class="toc-number">4.8.15.</span> <span class="toc-text">沙耶</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伊贺忍军"><span class="toc-number">4.8.16.</span> <span class="toc-text">伊贺忍军</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#侍"><span class="toc-number">4.8.17.</span> <span class="toc-text">侍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#陀流磨"><span class="toc-number">4.8.18.</span> <span class="toc-text">陀流磨</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#胧众"><span class="toc-number">4.8.19.</span> <span class="toc-text">胧众</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#大熊猫"><span class="toc-number">4.8.20.</span> <span class="toc-text">大熊猫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#无限示"><span class="toc-number">4.8.21.</span> <span class="toc-text">无限示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：零"><span class="toc-number">4.9.</span> <span class="toc-text">侍魂：零</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#德川庆寅"><span class="toc-number">4.9.1.</span> <span class="toc-text">德川庆寅</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#妖怪腐外道"><span class="toc-number">4.9.2.</span> <span class="toc-text">妖怪腐外道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#万-三九六"><span class="toc-number">4.9.3.</span> <span class="toc-text">万 三九六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#罗刹丸"><span class="toc-number">4.9.4.</span> <span class="toc-text">罗刹丸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#蕾娜（-蕾拉）"><span class="toc-number">4.9.5.</span> <span class="toc-text">蕾娜（    蕾拉）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#黑河内梦路"><span class="toc-number">4.9.6.</span> <span class="toc-text">黑河内梦路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#凶国日轮守我旺"><span class="toc-number">4.9.7.</span> <span class="toc-text">凶国日轮守我旺</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#刘云飞"><span class="toc-number">4.9.8.</span> <span class="toc-text">刘云飞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#真镜名·弥娜"><span class="toc-number">4.9.9.</span> <span class="toc-text">真镜名·弥娜</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：天下一剑客传"><span class="toc-number">4.10.</span> <span class="toc-text">侍魂：天下一剑客传</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#机巧麻吕"><span class="toc-number">4.10.1.</span> <span class="toc-text">机巧麻吕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#祭囃子双六"><span class="toc-number">4.10.2.</span> <span class="toc-text">祭囃子双六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安德鲁"><span class="toc-number">4.10.3.</span> <span class="toc-text">安德鲁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伊吕波"><span class="toc-number">4.10.4.</span> <span class="toc-text">伊吕波</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#真．我旺"><span class="toc-number">4.10.5.</span> <span class="toc-text">真．我旺</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：闪"><span class="toc-number">4.11.</span> <span class="toc-text">侍魂：闪</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#猛千代"><span class="toc-number">4.11.1.</span> <span class="toc-text">猛千代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#铃姫"><span class="toc-number">4.11.2.</span> <span class="toc-text">铃姫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#黑鹰"><span class="toc-number">4.11.3.</span> <span class="toc-text">黑鹰</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安洁莉卡"><span class="toc-number">4.11.4.</span> <span class="toc-text">安洁莉卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#奇里安（吉利安）"><span class="toc-number">4.11.5.</span> <span class="toc-text">奇里安（吉利安）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#格罗斯（加洛斯）"><span class="toc-number">4.11.6.</span> <span class="toc-text">格罗斯（加洛斯）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克劳德（克洛德）"><span class="toc-number">4.11.7.</span> <span class="toc-text">克劳德（克洛德）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#J"><span class="toc-number">4.11.8.</span> <span class="toc-text">J</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#金海澪"><span class="toc-number">4.11.9.</span> <span class="toc-text">金海澪</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#菅又刃兵卫"><span class="toc-number">4.11.10.</span> <span class="toc-text">菅又刃兵卫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#维尔达"><span class="toc-number">4.11.11.</span> <span class="toc-text">维尔达</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#德拉古"><span class="toc-number">4.11.12.</span> <span class="toc-text">德拉古</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#戈巴"><span class="toc-number">4.11.13.</span> <span class="toc-text">戈巴</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#侍魂：晓"><span class="toc-number">4.12.</span> <span class="toc-text">侍魂：晓</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#吴瑞香"><span class="toc-number">4.12.1.</span> <span class="toc-text">吴瑞香</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#妲丽·刀伽"><span class="toc-number">4.12.2.</span> <span class="toc-text">妲丽·刀伽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#鞍马夜叉丸"><span class="toc-number">4.12.3.</span> <span class="toc-text">鞍马夜叉丸</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#游戏其他说明"><span class="toc-number">5.</span> <span class="toc-text">游戏其他说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#游戏人物原型"><span class="toc-number">5.1.</span> <span class="toc-text">游戏人物原型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#游研社-游戏分析"><span class="toc-number">5.2.</span> <span class="toc-text">游研社-游戏分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#官网"><span class="toc-number">5.3.</span> <span class="toc-text">官网</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#游戏评价"><span class="toc-number">6.</span> <span class="toc-text">游戏评价</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee31.png)"><div id="post-info"><div id="post-title"><div class="posttitle">游戏介绍    SNK系列——《侍魂系列》</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-04-11<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-04-12</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%B8%B8%E6%88%8F%E4%BB%8B%E7%BB%8D/">游戏介绍</a><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%B8%B8%E6%88%8F%E4%BB%8B%E7%BB%8D/SNK/">SNK</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">10.5k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 30 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/2020/04/11/bee31/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2020/04/11/bee31/" itemprop="commentCount"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>侍魂（サムライスピリッツ、Samurai Spirits），是SNK公司於1993年推出的一款冷兵器格斗游戏，也是SNK公司的招牌游戏之一，后陆续推出了系列作品。<a href="https://baike.baidu.com/item/%E4%BE%8D%E9%AD%82/1657489?fr=aladdin" target="_blank" rel="noopener">百度</a></p>
+<p>侍魂（日版名：サムライスピリッツ，Samurai Spirits，英文版名：Samurai Shodown）是SNK公司于1993年推出的一款武器对战的格斗游戏，也是SNK公司的招牌游戏之一，后陆续推出了刀剑系列的作品。<br>由于此系列前两代中比较注重武器的真实感，一些舆论因此怀疑此游戏的制作团队在游戏中刻意渲染暴力[来源请求]，故从第四代开始改为卡通风格。<br>它被视为二维武器对战格斗游戏鼻祖，且是SNK最出色的游戏作品之一。该系列的欧美版也令SNK部分制作人员的差劲英语被欧美玩家所熟知，其中错误百出的英文被称为“SNKglish”。和《真人快打》不同的是，较为血腥的场面，例如遭武器砍杀时会喷出大量的鲜血，并没有招致太多的批评。但在欧美版中的红色鲜血被取消，或者被“白血”所替代，另外动作指令被更改也令一些玩家不满。<br>《侍魂》系列游戏最著名的是他们的怒气槽，一个使用超必杀技的度量，只有在玩家失血的时后才会增加。早期几个版本还有一个裁判“黑子”在背景中裁定游戏，这个设定在最新作《侍魂 天下第一剑客传》中重新的出现。<a href="http://www.bosimedia.com/wiki/%E4%BE%8D%E9%AD%82%E7%B3%BB%E5%88%97" target="_blank" rel="noopener">维基百科（镜像）</a></p>
+<p>不久前《侍魂·晓》发售了，有3名新增角色，其次，新作不管是特效还是渲染都有着很大提升。作为刀剑格斗的代表作，就打算以这篇博文来介绍下这款游戏，希望大家也能够喜欢上它。</p>
+<h1 id="游戏特色"><a href="#游戏特色" class="headerlink" title="游戏特色"></a>游戏特色</h1><p>《侍魂》是最早冲破了经典的《街头霸王2》规则的几个格斗游戏之一，它采用了不同的格斗系统以及对很多操作进行了改进（包括图形效果，例如那时革命性的拉镜头效果，最早出现于《龙虎之拳》。其续集《真侍魂》也受到评论家和游戏迷的狂热推崇，值得一提的是，《真侍魂》的制作人员是由当时由Capcom集体跳槽到SNK的快打2制作小组所制作的。</p>
+<a href="/2020/04/11/bee31/1.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" title="侍魂·闪" data-src="/2020/04/11/bee31/1.jpg"></a>
+
+<p>和很多SNK招牌系列一样，《侍魂》拥有格斗游戏史上多个第一。例如：</p>
+<ol>
+<li>日本唯一有大量喷血与断头腰斩等特效的格斗游戏，不过被抗议后断头腰斩系统在往后续作被取消。</li>
+<li>全员持武器格斗，可将武器打到脱手。</li>
+<li>《侍魂64》是第一个包含多层舞台的三维格斗游戏，你可以打破舞台的一层，在相邻的另一区域格斗。该思想后来也出现在（并经常错误的被归功于）《死或生2》中。</li>
+<li>该系列是第一个包含特殊的格挡形式的游戏：在合适的时机格挡对方的攻击而令对手产生硬直，使得玩家有机会发起反击，有时这种情况可以造成一次成功的逆转。该系统在该系列中一直存在，并且其变种在很多其他游戏中出现，例如《月华剑士》，和Capcom的《街头霸王3》中的格档。</li>
+</ol>
+<h1 id="游戏版本"><a href="#游戏版本" class="headerlink" title="游戏版本"></a>游戏版本</h1><table>
+<thead>
+<tr>
+<th align="center">中文名</th>
+<th align="center">日文名&amp;英文名</th>
+<th align="center">平台</th>
+<th align="center">发行日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">侍魂</td>
+<td align="center">Samurai Spirits (サムライスピリッツ)</td>
+<td align="center">Neo-Geo</td>
+<td align="center">1993年7月7日</td>
+</tr>
+<tr>
+<td align="center">真 侍魂 霸王丸地狱变</td>
+<td align="center">Shin Samurai Spirits: Haohmaru Jigokuhen(真サムライスピリッツ 覇王丸地獄変)</td>
+<td align="center">Neo-Geo</td>
+<td align="center">1994年10月28日</td>
+</tr>
+<tr>
+<td align="center">侍魂 斩红郎无双剑</td>
+<td align="center">Samurai Spirits: Zankurou Musouken(サムライスピリッツ 斬紅郎無双剣)</td>
+<td align="center">Neo-Geo</td>
+<td align="center">1995年11月15日</td>
+</tr>
+<tr>
+<td align="center">侍魂 天草降临</td>
+<td align="center">Samurai Spirits: Amakusa Kourin(サムライスピリッツ 天草降臨)</td>
+<td align="center">Neo-Geo</td>
+<td align="center">1996年10月25日</td>
+</tr>
+<tr>
+<td align="center">真说侍魂 武士道列传</td>
+<td align="center">Shinsetsu Samurai Spirits Bushidou Retsuden(真説サムライスピリッツ 武士道列伝)</td>
+<td align="center">Neo-Geo CD</td>
+<td align="center">1997年6月27日</td>
+</tr>
+<tr>
+<td align="center">侍魂64</td>
+<td align="center">Samurai Spirits(サムライスピリッツ 侍魂)</td>
+<td align="center">Hyper Neogeo 64</td>
+<td align="center">1997年12月19日</td>
+</tr>
+<tr>
+<td align="center">侍魂 阿修罗斩魔传</td>
+<td align="center">Samurai Spirits 2: Asura Zanmaden(侍魂2 アスラ斬魔伝)</td>
+<td align="center">Hyper Neogeo 64</td>
+<td align="center">1998年10月16日</td>
+</tr>
+<tr>
+<td align="center">侍魂!</td>
+<td align="center">Samurai Spirits!(サムライスピリッツ!)</td>
+<td align="center">Neo Geo Pocket</td>
+<td align="center">1998年12月25日</td>
+</tr>
+<tr>
+<td align="center">侍魂! 2</td>
+<td align="center">Samurai Spirits! 2(サムライスピリッツ! 2)</td>
+<td align="center">Neo Geo Pocket Color</td>
+<td align="center">1999年4月30日</td>
+</tr>
+<tr>
+<td align="center">剑客异闻录 苏醒的苍红之刃 侍魂新章</td>
+<td align="center">Kenkyaku Ibunroku-Yomigaerishi Soukou no Yaiba-Samurai Spirits Shinshou(剣客異聞録 甦りし蒼紅の刃 サムライスピリッツ新章)</td>
+<td align="center">PlayStation</td>
+<td align="center">1999年12月22日</td>
+</tr>
+<tr>
+<td align="center">侍魂 零</td>
+<td align="center">Samurai Spirits Zero(サムライスピリッツ 零)</td>
+<td align="center">Neo-Geo</td>
+<td align="center">2003年10月10日</td>
+</tr>
+<tr>
+<td align="center">侍魂 零 特别版</td>
+<td align="center">Samurai Spirits Zero Special(サムライスピリッツ 零 Special)</td>
+<td align="center">Neo-Geo</td>
+<td align="center">2004年4月22日</td>
+</tr>
+<tr>
+<td align="center">侍魂 天下第一剑客传</td>
+<td align="center">Samurai Spirits Tenkaichi Kenkyakuden(サムライスピリッツ 天下一剣客伝)</td>
+<td align="center">Atomiswave</td>
+<td align="center">2005年9月14日</td>
+</tr>
+<tr>
+<td align="center">侍魂 闪</td>
+<td align="center">Samurai Spirits Sen(サムライスピリッツ 閃)</td>
+<td align="center">Taito Type X2</td>
+<td align="center">2008年4月17日</td>
+</tr>
+<tr>
+<td align="center">侍魂：六番胜负</td>
+<td align="center">Samurai Spirits Rokuban Shoubuサムライスピリッツ六番胜负</td>
+<td align="center">Wii</td>
+<td align="center">2008年7月24日</td>
+</tr>
+<tr>
+<td align="center">侍魂 晓</td>
+<td align="center">Samurai Spirits(サムライスピリッツ)</td>
+<td align="center">PS4、Xbox One、Nintendo Switch、PC</td>
+<td align="center">2019年6月27日（PS4、Xbox One）、2019年预定（Nintendo Switch、PC）</td>
+</tr>
+</tbody></table>
+<h1 id="角色介绍"><a href="#角色介绍" class="headerlink" title="角色介绍"></a>角色介绍</h1><h2 id="《侍魂》（1993）"><a href="#《侍魂》（1993）" class="headerlink" title="《侍魂》（1993）"></a>《侍魂》（1993）</h2><h3 id="霸王丸"><a href="#霸王丸" class="headerlink" title="霸王丸"></a>霸王丸</h3><a href="/2020/04/11/bee31/2.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/2.jpg"></a>
+
+<ul>
+<li>流派：二天一流</li>
+<li>武器：河豚毒</li>
+</ul>
+<p>属于该游戏主角，几乎每代版本都有，出生位于武藏国里一个旗本阶级的贫穷武士世家，手持武器名为河豚毒，该名称是来自于霸王丸以此刀具的刀背来劈打对手时，其力道强度会让对手仿佛中了河豚的毒素般全身麻痹动弹不得。</p>
+<a href="/2020/04/11/bee31/1.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/1.jfif"></a>
+
+<p>霸王丸与另一游戏角色牙神幻十郎为同门，不过后者被逐出师门，牙神在游戏背景里将是霸王丸的一大劲敌。</p>
+<h3 id="娜可露露（ナコルル）"><a href="#娜可露露（ナコルル）" class="headerlink" title="娜可露露（ナコルル）"></a>娜可露露（ナコルル）</h3><a href="/2020/04/11/bee31/3.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/3.jpg"></a>
+
+<ul>
+<li>流派：SHIKANNA-KAMUI流刀舞术</li>
+<li>武器：短刀齐齐乌西（チチウシ）、玛玛哈哈</li>
+</ul>
+<p>该名又译作“娜考露露”、“娜考璐璐”（NAKORURU），被设定为来自明和时期北海道一带，当地原住民族阿伊努人中的一名性格温和坚毅、热爱大自然的少女。格斗技是天神流刀舞术（シカンナカムイ流刀舞術），武器是短刀齐齐乌西（チチウシ）和伙伴玛玛哈哈。</p>
+<a href="/2020/04/11/bee31/2.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/2.jfif"></a>
+
+<p>游戏剧情中，娜可露露会踏上战斗旅程，是因为有感到一股邪恶势力将摧毁她所居住的自然家园。为了守护族人，娜可露露携带着他父亲留下的短刀齐齐乌西（チチウシ）、以及她的猎鹰伙伴玛玛哈哈（ママハハ），踏上了战斗旅程。</p>
+<h3 id="橘右京"><a href="#橘右京" class="headerlink" title="橘右京"></a>橘右京</h3><a href="/2020/04/11/bee31/3.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/3.jfif"></a>
+
+<ul>
+<li>流派：神梦一刀流</li>
+<li>武器：无名</li>
+</ul>
+<p>居合斩的高手，没落士族的末裔、相依为命的母亲也因病很早就去世。年幼时起跟母亲一样体弱多病、受到母亲过世时留下的遗言”希望能成为了不起的武士”所影响，经过刻苦修练之后克服了原先虚弱的体质，作为剑术家也有所成就之时却患上了肺结核，余命所剩无几。因此胜利POSE基本上都会咳血。几乎全系列作品都有登场，只有侍魂新章~剑客异闻录 苏醒的苍红之刃未登场。</p>
+<a href="/2020/04/11/bee31/4.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/4.jfif"></a>
+
+<p>右京在系列开始时被设计为霸王丸的宿敌角色，是与象征“阳”的霸王丸对极的象征“阴”的存在。武器是居合刀 自作·无铭，流派是神梦想一刀流，剧情里他喜欢领主之女・小田桐圭，虽然知道这是段因为身份之差而无法有结果的恋情、但还是爱慕着她。（舔狗）</p>
+<a href="/2020/04/11/bee31/26.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/26.jpg"></a>
+
+<h3 id="千两狂死郎"><a href="#千两狂死郎" class="headerlink" title="千两狂死郎"></a>千两狂死郎</h3><a href="/2020/04/11/bee31/1.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/1.png"></a>
+
+<ul>
+<li>流派：舞斗流歌舞伎</li>
+<li>武器：世话女房</li>
+</ul>
+<a href="/2020/04/11/bee31/2.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/2.png"></a>
+
+<p>一位为艺术而生，穷尽一切力量追求舞蹈极致的舞者，为了能让自己的舞步更上一层，更能挥洒出生命，找寻出自己追求的极致之美，千两狂死郎逐一与各地的剑豪展开生死决斗，只有如此，他才能感到自己不断的超越，不断的让自己的歌舞伎舞步攀向巅峰，也许在旁人眼中这种行为像是疯狂的，但是为了艺术，而愿意献出生命去换得最高美感的狂死郎而言，一切都是值得的，因此狂死郎展开旅途，在生与死交替之间，找寻最高的极致之美。</p>
+<h3 id="夏洛特"><a href="#夏洛特" class="headerlink" title="夏洛特"></a>夏洛特</h3><a href="/2020/04/11/bee31/6.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/6.jfif"></a>
+
+<ul>
+<li>无流派</li>
+<li>武器: LA ROCHE</li>
+</ul>
+<a href="/2020/04/11/bee31/5.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/5.jfif"></a>
+
+<p>夏洛特是一个女剑客，她是法国革命的传奇人物，拥有比男人更顽强的斗志。她曾为了拯救遭受动乱的祖国而战，和其他剑士一起打倒了天草四郎时贞。从此，凡尔赛皇宫墙上就换上了众剑士讨伐天草的油画。 然而她感觉天草并不是真正的魔王，后来罗将神的出现证实了她的直觉，这位巾帼英雄的利剑再次出鞘。</p>
+<h3 id="服部半藏"><a href="#服部半藏" class="headerlink" title="服部半藏"></a>服部半藏</h3><a href="/2020/04/11/bee31/7.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/7.jfif"></a>
+
+<ul>
+<li>流派:伊贺流</li>
+<li>武器:无名·忍者刀</li>
+</ul>
+<a href="/2020/04/11/bee31/8.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/8.jfif"></a>
+
+<p>原名服部正成，伊贺忍者，父亲为仕足利义晴，后来移居三河国。其他故事可以查看同名的原<a href="https://baike.baidu.com/item/%E6%9C%8D%E9%83%A8%E6%AD%A3%E6%88%90/8566994?fromtitle=%E6%9C%8D%E9%83%A8%E5%8D%8A%E8%97%8F&fromid=25887" target="_blank" rel="noopener">人物百科</a></p>
+<h3 id="加尔福特"><a href="#加尔福特" class="headerlink" title="加尔福特"></a>加尔福特</h3><a href="/2020/04/11/bee31/9.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/9.jfif"></a>
+
+<ul>
+<li>流派:    甲贺流+加尔福特忍术</li>
+<li>武器:正义之刀</li>
+</ul>
+<a href="/2020/04/11/bee31/4.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/4.jpg"></a>
+
+<p>加尔福特是一位金发碧眼的美国籍忍者，身旁总是带着他的最佳伙伴，忍犬巴比，虽然学习忍术是一件非常困难的事，尤其对外国人来说更是不简单，但是加尔福特在他的宠物巴比的陪伴下，终于学成了，而巴比也在这段时间学会了一些技巧，因此加尔福特就和巴比创出一套独特的忍术风格。</p>
+<h3 id="天草四郎时贞"><a href="#天草四郎时贞" class="headerlink" title="天草四郎时贞"></a>天草四郎时贞</h3><a href="/2020/04/11/bee31/10.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/10.jfif"></a>
+
+<ul>
+<li>流派:不明</li>
+<li>武器：GADAMER宝珠</li>
+</ul>
+<a href="/2020/04/11/bee31/11.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/11.jfif"></a>
+
+<p>天草四郎，一个迷失在对与错，正与邪之间的男子，朱红的双唇泛出对血的渴求与欲望，雪白的肌肤和一<br>身华丽的服装更显出自己高贵的特质，虽然口里说着要创造新世界，而获得声望与信徒的天草四郎，却只是为了满足自己的私欲和对血的渴求，声称「解放灵魂」而杀死求得神明解脱的人，在自己的任意妄为下，欣赏着人们痛苦不堪的表情，这也许就是他最大的嗜好吧，为了使自己的灵魂升格到无比的崇高境界，低贱的人们是他成功的垫脚石，而弄脏他双手的，只是污秽不堪的人们所流下的污秽的血罢了……</p>
+<a href="/2020/04/11/bee31/12.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/12.jfif"></a>
+
+<p>为了得到「鬼」无限的力量，于是天草四郎决意杀「鬼」而行动。 再度复活的天草四郎，感到自己的「不完全」，于是为了取回自己失去的「黑暗的那一半」，使自己的力量再度合而为一，天草四郎朝岛原的魔城「天草城」而行。</p>
+<p>虽然天草拥有常人不能想象的力量，但他还是被一位名叫霸王丸的剑士打败了。</p>
+<p>可当天草与霸王丸作战时，由于受到霸王丸豪爽的性格，以及强烈的为人类而战的正义感的影响，天草体内深处的人性被渐渐的唤醒了。 后来，为了寻找传说中的魔界之花，不顾身患绝症，毅然踏上征途的桔·右京；还有许多不同人的不同的事迹，所表达出的人类的许多高尚品格，不断影响着天草四郎。但最重要的是，天草感受到了人类最伟大的力量，那就是“爱”。</p>
+<h3 id="塔姆塔姆"><a href="#塔姆塔姆" class="headerlink" title="塔姆塔姆"></a>塔姆塔姆</h3><a href="/2020/04/11/bee31/5.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/5.jpg"></a>
+
+<ul>
+<li>流派：马雅流</li>
+<li>武器：长刀 HENGE HANGE ZANGE</li>
+</ul>
+<a href="/2020/04/11/bee31/3.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/3.png"></a>
+
+<p>塔姆塔姆出生在南美洲的某处绿色森林中，为玛雅人,是一位生长在亚玛逊河流域的战士，担任著保护村落与村落的两颗宝珠的责任，原以为这样的日子能一直持续下去，与妹妹和村人们和乐生活著，然而暗黑神掌握了天草四郎的灵魂，令其复活，天草四郎，夺走宝珠，唤出邪魔鬼怪等等……身负保护村落与宝珠的重任，塔姆塔姆戴上了战士的面具，举起宝刀，朝夺回宝珠之路前进。最后打败天草、夺回宝珠、挽救了村子。</p>
+<h3 id="柳生十兵卫"><a href="#柳生十兵卫" class="headerlink" title="柳生十兵卫"></a>柳生十兵卫</h3><a href="/2020/04/11/bee31/8.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/8.jpg"></a>
+
+<ul>
+<li>流派：柳生新阴流·改</li>
+<li>武器：大和守虎铁·助広</li>
+</ul>
+<a href="/2020/04/11/bee31/4.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/4.png"></a>
+
+<p>全名柳生十兵卫三严，是日本史上有名的剑客。十兵卫与祖父柳生石舟斋宗严，父亲柳生但马守宗矩被合称为”柳生三天狗”。是日本封建时代最出名以及最常被浪漫化的武士之一。更多详情请查看同名原<a href="https://baike.baidu.com/item/%E6%9F%B3%E7%94%9F%E4%B8%89%E4%B8%A5/20830707?fromtitle=%E6%9F%B3%E7%94%9F%E5%8D%81%E5%85%B5%E5%8D%AB&fromid=1510" target="_blank" rel="noopener">人物百科</a></p>
+<h3 id="王虎"><a href="#王虎" class="headerlink" title="王虎"></a>王虎</h3><a href="/2020/04/11/bee31/5.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/5.png"></a>
+
+<ul>
+<li>流派：少林寺流拔刀术</li>
+<li>武器：扑肉大石柱</li>
+</ul>
+<a href="/2020/04/11/bee31/1.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/1.jpeg"></a>
+
+<p>王虎出生在清代后期，这既是动荡不安且腐败的年代，也是豪杰辈出的年代。虽然王虎所属的王族已经没落，但王虎心中仍有王族后裔的自豪感。</p>
+<h3 id="不知火幻庵"><a href="#不知火幻庵" class="headerlink" title="不知火幻庵"></a>不知火幻庵</h3><a href="/2020/04/11/bee31/9.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/9.jpg"></a>
+
+<ul>
+<li>流派:魔道流</li>
+<li>武器:利爪Azami(あざみ)</li>
+</ul>
+<a href="/2020/04/11/bee31/10.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/10.jpg"></a>
+
+<p>不知火一族生活在一个位于人魔界交界处的小岛，这个种族是人魔混血的，既不被人所接受，也不被魔族接受，只能常年生活在这个岛上，过着孤独的生活。作为不知火族最强战士的不知火幻庵，决心成为魔界承认的武士，于是开始了他为魔王效命的生涯。</p>
+<h3 id="地震-地雷震"><a href="#地震-地雷震" class="headerlink" title="地震(地雷震)"></a>地震(地雷震)</h3><a href="/2020/04/11/bee31/11.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/11.jpg"></a>
+
+<ul>
+<li>流派：我流忍术</li>
+<li>武器：巨型锁镰富士山（FUJIYAMA） </li>
+</ul>
+<a href="/2020/04/11/bee31/12.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/12.jpg"></a>
+
+<p>1759年，在美国德克萨斯州乡下的一个贫苦家庭中出生了一个巨婴，由于他的哭声太大了，大家都叫他“地震”。</p>
+<a href="/2020/04/11/bee31/16.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/16.jfif"></a>
+
+<p>罗将神被消灭后，地震带着五个手下前往魔界搜寻财宝，地震的贪婪让他丝毫没察觉到魔界之门即将关闭，最终，地震和他的党羽被关在了魔界，生死不明。</p>
+<h2 id="真侍魂：霸王丸地狱变"><a href="#真侍魂：霸王丸地狱变" class="headerlink" title="真侍魂：霸王丸地狱变"></a>真侍魂：霸王丸地狱变</h2><h3 id="牙神幻十郎"><a href="#牙神幻十郎" class="headerlink" title="牙神幻十郎"></a>牙神幻十郎</h3><a href="/2020/04/11/bee31/13.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/13.jfif"></a>
+
+<ul>
+<li>流派：古阴一刀流</li>
+<li>武器：梅莺毒</li>
+</ul>
+<a href="/2020/04/11/bee31/6.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/6.jpg"></a>
+
+<p>霸王丸一生的宿敌的剑客，似乎是命运，将牙神与霸王丸紧紧系在一起，并给予他们俩永不修止的斗争与杀戮。</p>
+<p>“只要是我想要的，我想做的，就算是神佛！我也遇神杀神！遇佛斩佛！”牙神儿时就父亲早逝，母亲为了家计而在风月场所讨生活，家中的客人总是市井流氓。牙神一直连自己的生父是谁都不知道，从小就饱受其它人的欺凌嘲弄。因此牙神就认定“这个世界是由贪婪和权力所构成的，我的目标就是破坏这一切！”最后，再也受不了这种生活的牙神，手刃了自己的母亲，早早地堕入了非人的鬼道……后来他为了精进自己的剑术，也为了结束这种漂泊的生活，拜了枯华院的花讽院和仲为师，成为他的大弟子，霸王丸的师兄。由于天生资质，他的剑技越来越精，心也越来越邪恶。</p>
+<a href="/2020/04/11/bee31/7.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/7.jpg"></a>
+
+<p>一日，师父问“剑为何？”，牙神答道：“剑即斩。”因此，师父决定只将“枯华院一刀流”精华传授给他的师弟霸王丸一人。牙神知道后，妒火中烧，终于接受了魔道的诱惑，渴望堕入魔道后能获得更强大的力量。自然，他被枯华院驱逐了。不过在他心中，堕入魔道只是一个借口，一个开始，而不是归宿。“除掉了阻碍我的人之后，我连魔道也不会放过！”邪气冲天，豪放不羁的牙神幻十郎，就这样展开他孤独的浪人旅途。</p>
+<h3 id="莱因哈特．斯卡（莱锡路）"><a href="#莱因哈特．斯卡（莱锡路）" class="headerlink" title="莱因哈特．斯卡（莱锡路）"></a>莱因哈特．斯卡（莱锡路）</h3><a href="/2020/04/11/bee31/13.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/13.jpg"></a>
+
+<ul>
+<li>流派：红狮子流佣兵术</li>
+<li>武器：Krayfish Klaw</li>
+</ul>
+<a href="/2020/04/11/bee31/6.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/6.png"></a>
+
+<p>莱锡路是全欧最强军队红狮子圣骑士团的团长，自小就在不断地格斗战中成长，磨炼出钢铁般的身体和斗志。莱锡路是一位有强烈骑士荣誉感的人，严守军队的纪律，为人十分严谨，因而深受士兵和军官们的尊敬和信赖。当他得知国境内怪事不断，不论是军队或是民众都常被魔物所袭击时，莱锡路受命出征。</p>
+<h3 id="花讽院和狆"><a href="#花讽院和狆" class="headerlink" title="花讽院和狆"></a>花讽院和狆</h3><a href="/2020/04/11/bee31/14.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" title="[title]" data-src="/2020/04/11/bee31/14.jpg"></a>
+
+<ul>
+<li>流派：户隐流阴阳术</li>
+<li>武器：咒语（南无阿弥陀佛）</li>
+</ul>
+<p>花讽院和狆却是一位阴阳术师，年轻时曾在魔物讨伐中很出名。随着魔物的减少，当年无敌的除魔拍档和仲和黑子相互道别，隐退江湖，让年轻的一代展露才华。本打算在枯华院作为主持安静地过余生，但听到霸王丸与魔物、牙神作战的消息还是离开了寺院重新走向斗场。外貌枯瘦的小老头，却蕴含着难以估计的巨大能量。</p>
+<h3 id="黑子"><a href="#黑子" class="headerlink" title="黑子"></a>黑子</h3><a href="/2020/04/11/bee31/15.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/15.jpg"></a>
+
+<ul>
+<li>流派：不明</li>
+<li>武器：无</li>
+</ul>
+<p>有关黑子的传说大概只有一句话：“数十年前，有一位穿着袈裟的和尚和一位全身黑衣的男子，在这两人的配合下，不知除去了多少魔物，以致魔物一度销声匿迹数十年。”没有人知道黑子的真面目，更没有人知道他的功夫底子。后来黑子开始从事审判工作，拥有数十年除魔经验的黑子，干这一行当是再合适也不过的了。现在魔物又出现了，但黑子却没有复出，他认为他与和仲总有一天要死去，如果不尽快培养出下一代除魔人材，岂不是要天下大乱。不过必要的时候，黑子还是复出的。</p>
+<h3 id="查姆查姆"><a href="#查姆查姆" class="headerlink" title="查姆查姆"></a>查姆查姆</h3><a href="/2020/04/11/bee31/16.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/16.jpg"></a>
+
+<ul>
+<li>流派：马雅流</li>
+<li>武器：YOK MOK MOOK</li>
+</ul>
+<p>14岁的她与哥哥塔姆塔姆一样，继承了圣战士的血统。哥哥为寻回失去的宝物，一去不回，后来魔王又偷走了村中的另一颗守护石破王之卵。查姆查姆再也忍不住了，她带着猴子巴古巴古，为寻找哥哥和两颗守护石而踏上征途。</p>
+<h3 id="罗将神水姬（罗将神美州姬）"><a href="#罗将神水姬（罗将神美州姬）" class="headerlink" title="罗将神水姬（罗将神美州姬）"></a>罗将神水姬（罗将神美州姬）</h3><a href="/2020/04/11/bee31/17.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/17.jpg"></a>
+
+<ul>
+<li>流派：言灵邪灵之法</li>
+<li>武器：ミ・ゴウ玉串（魅豪玉串）</li>
+</ul>
+<a href="/2020/04/11/bee31/19.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/19.jpg"></a>
+
+<p>在水姬13岁时，以憎恶的肉体作为牺牲品和阿布罗夏定下不死的契约。成为“罗将神水姬”。但其实只是作为一个精神体（灵体）而存在。经过了数年的岁月，期间世界中灾祸不断（在这期间，水姬交换了许多次身体，虽然她簦定的是不死的契约，但要使力量不断增长，但也要夺取他人的肉体，吸收别人的灵魂才行。</p>
+<a href="/2020/04/11/bee31/18.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/18.jpg"></a>
+
+<p>1400年后半期（室町末期~战国处期） 水姬由于当时取得的身体达到了界限，又没有发现新的合适的身体，因此进入恐山休眠</p>
+<p>1500年（战国中期），美州姬出生，12岁便成为有名的歌舞伎，16岁时觉醒了神通力，25岁时知道了罗将身水姬的存在，美州姬想用佛力降伏水姬，但反而被水姬打败了，并被水姬取得了肉体。</p>
+<p>1600年（江户初期） 由于黑暗势力的减弱，水姬被封印起来(实际上是自己进入睡眠)。1750年，花讽院和狆和黑子合力将罗将神水姬封印。</p>
+<h2 id="侍魂：斩红郞无双剑"><a href="#侍魂：斩红郞无双剑" class="headerlink" title="侍魂：斩红郞无双剑"></a>侍魂：斩红郞无双剑</h2><h3 id="首斩破沙罗"><a href="#首斩破沙罗" class="headerlink" title="首斩破沙罗"></a>首斩破沙罗</h3><a href="/2020/04/11/bee31/14.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/14.jfif"></a>
+
+<ul>
+<li>流派：本能让剑震动</li>
+<li>武器：罪人杀</li>
+</ul>
+<a href="/2020/04/11/bee31/20.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/20.jpg"></a>
+
+<p>世界上最大的力量，便是爱情，爱的力量，甚至可以让一个人从死亡的谷底回来．．．破沙罗与篝火的新婚之夜，终于从情侣成为夫妻了，然而上天总是作弄有情人，这对神仙眷侣却双双魂断黄泉，命丧在一个人称之为“鬼”－壬无月斩红郎的凶刀下．．</p>
+<a href="/2020/04/11/bee31/25.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/25.jpg"></a>
+
+<p>由于破沙罗的怨气太重，使得他的灵魂没有归所，只能不断的在世间游荡，在血液已经停止流动的身驱里，追寻着已经不可能回到的快乐时光，无止尽的思念是那曾经呼换自己的名子，用双手轻轻拥着自己的篝火；无止尽的怨念是那无差别杀戮，挥舞着凶刀的斩红郎。</p>
+<a href="/2020/04/11/bee31/15.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/15.jfif"></a>
+
+<p>只有这两种情感的破沙罗，在黑暗中一边凄笑一边恸哭着，杀了斩红郎的怨念是支持他继续行动的力量，手持着罪人杀，破沙罗摇曳在月下，隐没在黑暗里…</p>
+<h3 id="花讽院骸罗（金雄载）"><a href="#花讽院骸罗（金雄载）" class="headerlink" title="花讽院骸罗（金雄载）"></a>花讽院骸罗（金雄载）</h3><a href="/2020/04/11/bee31/21.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/21.jpg"></a>
+
+<ul>
+<li>流派：无</li>
+<li>武器：南无阿弥陀佛</li>
+</ul>
+<p>角色背景故事信息不详，评论可留言</p>
+<h3 id="莉姆露露"><a href="#莉姆露露" class="headerlink" title="莉姆露露"></a>莉姆露露</h3><a href="/2020/04/11/bee31/22.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/22.jpg"></a>
+
+<ul>
+<li>流派：SHIKANNA-KAMUI流刀舞术-冰之章</li>
+<li>武器：秘刀HaHa-Kuru</li>
+</ul>
+<a href="/2020/04/11/bee31/23.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/23.jpg"></a>
+
+<p>带着冰精灵克恩鲁，性格总像个小孩子一样，但在姐姐离开后也学会变得坚强。14岁被冰封，后被娜可露露所救，由姐姐娜可露露一手带大，对自己的姐姐总是抱持着一份敬仰与爱慕。长久以来在姐姐保护下的莉姆露露，始终过着安稳的生活，但是身为巫女的宿命，姊姊离开了家乡。</p>
+<a href="/2020/04/11/bee31/24.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/24.jpg"></a>
+
+<p>之后，莉姆露露也查觉到大自然的平衡被天草四郎给扰乱了。为了达成自己的宿命，也为了使自己成为更成熟与具有力量的女巫，莉姆露露追随着姐姐的脚步，独自努力的展开旅途。</p>
+<h3 id="壬无月斩红郎"><a href="#壬无月斩红郎" class="headerlink" title="壬无月斩红郎"></a>壬无月斩红郎</h3><a href="/2020/04/11/bee31/2.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/2.jpeg"></a>
+
+<ul>
+<li>流派：无限一刀流</li>
+<li>武器：红钢怨狱丸</li>
+</ul>
+<p>舞动着大刀，肆虐无法抵抗的人们，随着痛苦摇曳的姿态，让刀饱食鲜血，这名被称为“鬼”的男人，已经袭卷过无数个村庄，无止尽的杀戮，使得天地变色，鬼哭神嚎，惨死刀下的人不计其数，血流成河。“鬼”的放肆杀戮停止在一名婴儿前，婴儿最纯真无瑕的哭声让“鬼”终止了一切；“鬼”注视着婴儿，然后转身离去，取而代之的，是找有带刀的侍卫阻击，就这样过了许多年后．．．</p>
+<a href="/2020/04/11/bee31/27.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/27.jpg"></a>
+
+<p>许多武士为了报仇，正义等等的原因而至的挑战，造了太多杀业的斩红郎，也许一生都无法摆脱战斗的命运。</p>
+<h3 id="绯雨闲丸"><a href="#绯雨闲丸" class="headerlink" title="绯雨闲丸"></a>绯雨闲丸</h3><a href="/2020/04/11/bee31/3.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/3.jpeg"></a>
+
+<ul>
+<li>流派：绯刀流</li>
+<li>武器：露雨 (伞) &amp; 大祓祸神闲丸 (刀)</li>
+</ul>
+<a href="/2020/04/11/bee31/28.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/28.jpg"></a>
+
+<p>本名是水无月刃，1780年斩红郎屠杀的时候(6岁）所在水无月本家全灭，刃侥幸逃脱但最后失去记忆 。</p>
+<a href="/2020/04/11/bee31/17.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/17.jfif"></a>
+
+<p>据说是模仿”鬼”的剑技演变出来的，后来被僧侣收养，再后来被一对夫妇收养，也就是儚和旦那（零） ，黄泉之乱结束后，1788年去找斩红郎复仇，兼为了找回记忆，最后打败斩红郎。</p>
+<h2 id="侍魂：天草降临"><a href="#侍魂：天草降临" class="headerlink" title="侍魂：天草降临"></a>侍魂：天草降临</h2><h3 id="风间火月"><a href="#风间火月" class="headerlink" title="风间火月"></a>风间火月</h3><a href="/2020/04/11/bee31/1.gif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/1.gif"></a>
+
+<ul>
+<li>流派：风间流忍术+我流</li>
+<li>武器：弯刀 朱雀Suzaku</li>
+</ul>
+<a href="/2020/04/11/bee31/4.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/4.jpeg"></a>
+
+<p>风间流里，使著寄宿焦热之力的爱刀－朱雀战斗的热血男子，虽然不太经过大脑的莽撞行动，与冲动易怒的暴躁性格，然而火月仍不失一个至情至性的好男儿。闻知叶月危险的火月，毫不考虑的就奔出风间流的忍者故乡，与哥哥苍月的冷静相反，只是，苍月的任务却是对擅自行动的火月「处置」，对这样一个不顾亲情的冷血大哥，火月纵使憎恨他，不过在火月心里，却是非常尊敬他，以大哥为目标持续努力著。</p>
+<h3 id="风间苍月"><a href="#风间苍月" class="headerlink" title="风间苍月"></a>风间苍月</h3><a href="/2020/04/11/bee31/29.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/29.jpg"></a>
+
+<ul>
+<li>流派：风间流忍术+我流</li>
+<li>武器：青龙</li>
+</ul>
+<p>围绕在他身边的，是和他一样冷的水，从他冷酷的瞳孔里,似乎看不到丝毫的热情,在他心中没有别的，只有自己的任务与风间流忍者组织..他就是风间苍月，一个和水一样冷的人，就在妹妹叶月被天草四郎捉走时，弟弟火月为了叶月而奋不顾身的脱离组织，这时，他收到的任务就是阻杀火月，究竟在命令与亲情之间，苍月会如何选择呢？他选择了任务…为了阻杀自己的弟弟，苍月跟随着火月的脚步，开始了旅程…..</p>
+<a href="/2020/04/11/bee31/30.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/30.jpg"></a>
+
+<p>风间三兄妹的长兄，也就是火月与叶月的亲哥哥。 操纵着和眼神一样冷酷的水术，使着爱刀－青龙，两者合一的威力成为风间流里第一的强者。虽然拥有强大的力量，但是苍月的个性却是时常保持冷静的态度，对事物的观察透彻，在所有状况都在掌握下，确实的完成任务是苍月最得意的美学。为了阻止与了解为何离开的火月，苍月刻不容缓的紧追在后。</p>
+<p>」</p>
+<h2 id="侍魂RPG：真说武士道烈传"><a href="#侍魂RPG：真说武士道烈传" class="headerlink" title="侍魂RPG：真说武士道烈传"></a>侍魂RPG：真说武士道烈传</h2><h3 id="疾风之铃音"><a href="#疾风之铃音" class="headerlink" title="疾风之铃音"></a>疾风之铃音</h3><a href="/2020/04/11/bee31/19.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/19.jfif"></a>
+
+<ul>
+<li>流派：古剑术、御风术</li>
+<li>武器：背负的大型宝剑</li>
+</ul>
+<p>二百年前，伟大的巫女—美州姬，带著手下的三人众向罗将神水姬挑战。其中一人便是铃音的祖先—烈风之飞音。在美州姬失败被罗降神夺去身体後，飞音决定：“我要留在这里，恢复为一个女人。生下孩子後，如果是男的，我要教他剑术。如果是女的·…我也一样要教她剑术！等到哪天水姬开始引发暴乱时，就有人可以代替我阻止它的野心”。</p>
+<h3 id="牛若姫"><a href="#牛若姫" class="headerlink" title="牛若姫"></a>牛若姫</h3><p>无信息</p>
+<h3 id="时姫"><a href="#时姫" class="headerlink" title="时姫"></a>时姫</h3><p>无信息</p>
+<h3 id="烈风之飞音"><a href="#烈风之飞音" class="headerlink" title="烈风之飞音"></a>烈风之飞音</h3><p>无信息</p>
+<h3 id="破怨"><a href="#破怨" class="headerlink" title="破怨"></a>破怨</h3><p>无信息</p>
+<h2 id="侍魂64"><a href="#侍魂64" class="headerlink" title="侍魂64"></a>侍魂64</h2><h3 id="坏帝尤加"><a href="#坏帝尤加" class="headerlink" title="坏帝尤加"></a>坏帝尤加</h3><a href="/2020/04/11/bee31/33.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/33.jpg"></a>
+
+<ul>
+<li>流派：里柳生体术·改</li>
+<li>武器：破岩丸</li>
+</ul>
+<a href="/2020/04/11/bee31/45.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/45.jpg"></a>
+
+<p>妄图统治世界的木偶师，已得到半阴之女色，下一个目标是半阳之男霸王丸。据传，色的红眼睛就是坏帝尤加给她的。</p>
+<h3 id="木偶"><a href="#木偶" class="headerlink" title="木偶"></a>木偶</h3><a href="/2020/04/11/bee31/15.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/15.png"></a>
+
+<ul>
+<li>流派：不明</li>
+<li>武器：不明</li>
+</ul>
+<p>以霸王丸和色为原型，由半阴半阳者的样品造出来的实验体，实力在严陀罗的能力之上。曾经加尔福特与他们交战过，但胜负不明。</p>
+<h3 id="柳生磐马"><a href="#柳生磐马" class="headerlink" title="柳生磐马"></a>柳生磐马</h3><a href="/2020/04/11/bee31/23.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/23.jfif"></a>
+
+<ul>
+<li>流派：里柳生体术·改</li>
+<li>武器：破岩丸</li>
+</ul>
+<p>背景信息不详，可评论补充。</p>
+<h3 id="严陀罗"><a href="#严陀罗" class="headerlink" title="严陀罗"></a>严陀罗</h3><a href="/2020/04/11/bee31/9.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/9.png"></a>
+
+<p>坏帝尤加以数千个人类身体以特殊方法制造出来的傀儡，用于对付那些反对坏帝尤加的人。</p>
+<h3 id="色"><a href="#色" class="headerlink" title="色"></a>色</h3><a href="/2020/04/11/bee31/6.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/6.jpeg"></a>
+
+<ul>
+<li>流派：二刀流</li>
+<li>武器：阴魔轮，阳神轮</li>
+</ul>
+<a href="/2020/04/11/bee31/7.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/7.jpeg"></a>
+
+<p>色是一个被坏帝制造并控制的傀儡，常年一直被坏帝尤加控制，直到某一日遇到了娜可露露，唤醒了埋藏多年的一丝人性。</p>
+<h2 id="侍魂64：阿修罗斩魔传"><a href="#侍魂64：阿修罗斩魔传" class="headerlink" title="侍魂64：阿修罗斩魔传"></a>侍魂64：阿修罗斩魔传</h2><h3 id="水邪"><a href="#水邪" class="headerlink" title="水邪"></a>水邪</h3><a href="/2020/04/11/bee31/31.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/31.jpg"></a>
+<a href="/2020/04/11/bee31/32.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/32.jpg"></a>
+
+<ul>
+<li>流派：神的思考</li>
+<li>武器：屡堵罗之环</li>
+</ul>
+<p>苍月将寄宿在青龙里的力量解放，将之引导与自己结合。纵使如此，苍月并 没有迷失在强大的水之力量中，自我的意识仍完好存在着，只是以水邪的意识覆盖在表面，将身体溶入于水的能力，以自己冷静清楚的意识判断，使用着强大力量的水邪之力，成为近乎完美的战士，水之化身－“水邪”。</p>
+<h3 id="炎邪"><a href="#炎邪" class="headerlink" title="炎邪"></a>炎邪</h3><a href="/2020/04/11/bee31/18.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/18.jfif"></a>
+
+<ul>
+<li>流派：脊髄反射</li>
+<li>武器：或那之锁</li>
+</ul>
+<a href="/2020/04/11/bee31/48.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/48.jpg"></a>
+
+<p>追求强大力量的火月，最後被寄宿在刀里的朱雀之力反蚀支配‧‧‧控制不了自己的火月呈现暴走的「炎邪」形态，原本意识也被压抑而薄弱，只是本能的将体内无尽的火燄释放，燃烧一切，身体上浮现文字图腾，手上的指甲化做了爪子，像是野兽般，为了战斗而存在的火之化身，「炎邪火月</p>
+<h3 id="八角泰山"><a href="#八角泰山" class="headerlink" title="八角泰山"></a>八角泰山</h3><a href="/2020/04/11/bee31/20.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/20.jfif"></a>
+
+<ul>
+<li>流派：封字之法</li>
+<li>武器：神枪 端头具树</li>
+</ul>
+<a href="/2020/04/11/bee31/10.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/10.png"></a>
+
+<p>平静的生活，重要的、守护的家人，这一切被坏帝尤加夺走后，八角泰山将自己禁锢的封魔技巧开封，为了向尤加复仇，泰山亦然成为修罗，只是，从前的日子再也回不来了。</p>
+<h3 id="阿修罗（阿斯拉）"><a href="#阿修罗（阿斯拉）" class="headerlink" title="阿修罗（阿斯拉）"></a>阿修罗（阿斯拉）</h3><ul>
+<li>流派：不明</li>
+<li>武器：VIMUKTI（ヴィムクティ）</li>
+</ul>
+<a href="/2020/04/11/bee31/17.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/17.png"></a>
+
+<p>坏帝尤加的宿敌，游戏发售时的称号为“漆黑的复仇者”，首次出场取代了霸王丸的主角位置，也是侍魂唯一一位来自魔界的主人公，阿修罗最大的目的是向坏帝尤加复仇，并讨厌任何与尤加相关的东西。</p>
+<p>阿修罗是太古时期魔界最强的战士，使用魔手操控着“7个古代武器”，曾被尤加封印，《侍魂64》中，因尤加被霸王丸等人击败，封印阿修罗的咒缚减弱，使得阿修罗亲手切断封印之锁，重新现世，归来后的阿修罗展开了对尤加的复仇，最终在次元空间中亲手摧毁了尤加的肉体，完成了复仇。</p>
+<h2 id="侍魂：剑客异闻录-苏醒的苍红之刃（不细讲）"><a href="#侍魂：剑客异闻录-苏醒的苍红之刃（不细讲）" class="headerlink" title="侍魂：剑客异闻录 苏醒的苍红之刃（不细讲）"></a>侍魂：剑客异闻录 苏醒的苍红之刃（不细讲）</h2><h3 id="九葵苍志狼"><a href="#九葵苍志狼" class="headerlink" title="九葵苍志狼"></a>九葵苍志狼</h3><a href="/2020/04/11/bee31/18.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/18.png"></a>
+
+<ul>
+<li>流派：九皇天升流 冽</li>
+<li>武器：苍煌</li>
+</ul>
+<p>其他信息不明，待补充。</p>
+<h3 id="九鬼刀马"><a href="#九鬼刀马" class="headerlink" title="九鬼刀马"></a>九鬼刀马</h3><ul>
+<li>流派：九皇天升流 烈</li>
+<li>武器：红煌</li>
+</ul>
+<p>其他信息不明，待补充。</p>
+<h3 id="命"><a href="#命" class="headerlink" title="命"></a>命</h3><a href="/2020/04/11/bee31/19.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/19.png"></a>
+
+<ul>
+<li>流派：天性的素质</li>
+<li>武器：妖刀 哭麟</li>
+</ul>
+<p>其他信息不明，待补充。</p>
+<h3 id="幽堕"><a href="#幽堕" class="headerlink" title="幽堕"></a>幽堕</h3><a href="/2020/04/11/bee31/50.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/50.jpg"></a>
+
+<ul>
+<li>流派：不明</li>
+<li>武器：红莲刃（グレンジン）</li>
+</ul>
+<p>其他信息不明，待补充。</p>
+<h3 id="胧"><a href="#胧" class="headerlink" title="胧"></a>胧</h3><a href="/2020/04/11/bee31/39.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/39.jpg"></a>
+
+<ul>
+<li>流派：朧流幻术</li>
+<li>武器：呪默刀·禁灭枪（ジュモクトウ·キンメツソウ）</li>
+</ul>
+<p>其他信息不详，可评论补充</p>
+<h3 id="服部真藏"><a href="#服部真藏" class="headerlink" title="服部真藏"></a>服部真藏</h3><ul>
+<li>流派：伊贺流</li>
+<li>武器：无名·忍者刀</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="旋风卧龙"><a href="#旋风卧龙" class="headerlink" title="旋风卧龙"></a>旋风卧龙</h3><a href="/2020/04/11/bee31/20.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/20.png"></a>
+
+<ul>
+<li>流派：我道式一刀术</li>
+<li>武器：爱刀轰膳</li>
+</ul>
+<a href="/2020/04/11/bee31/21.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/21.png"></a>
+
+<p>其他信息不详，可评论补充。</p>
+<h3 id="花房迅卫门"><a href="#花房迅卫门" class="headerlink" title="花房迅卫门"></a>花房迅卫门</h3><a href="/2020/04/11/bee31/22.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/22.png"></a>
+
+<ul>
+<li>流派：活杀古式枪术</li>
+<li>武器：活杀十字枪</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="十六薙夜血（十六剃夜血）"><a href="#十六薙夜血（十六剃夜血）" class="headerlink" title="十六薙夜血（十六剃夜血）"></a>十六薙夜血（十六剃夜血）</h3><a href="/2020/04/11/bee31/23.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/23.png"></a>
+
+<ul>
+<li>流派：咒祖道弦流</li>
+<li>武器：落黄泉</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="七坐灰人"><a href="#七坐灰人" class="headerlink" title="七坐灰人"></a>七坐灰人</h3><a href="/2020/04/11/bee31/24.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/24.png"></a>
+
+<ul>
+<li>流派：座头流居合</li>
+<li>武器：八尾蛇</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="乱凤"><a href="#乱凤" class="headerlink" title="乱凤"></a>乱凤</h3><a href="/2020/04/11/bee31/25.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/25.png"></a>
+
+<ul>
+<li>流派：无</li>
+<li>武器：风呼灵</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="眠兔"><a href="#眠兔" class="headerlink" title="眠兔"></a>眠兔</h3><ul>
+<li>流派：无</li>
+<li>武器：红叶的猫锤</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="榊铳士浪（龙巳十四郎）"><a href="#榊铳士浪（龙巳十四郎）" class="headerlink" title="榊铳士浪（龙巳十四郎）"></a>榊铳士浪（龙巳十四郎）</h3><a href="/2020/04/11/bee31/26.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/26.png"></a>
+
+<ul>
+<li>流派：龙巳一刀流</li>
+<li>武器：九头龙</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="吉野凛花（晓村）"><a href="#吉野凛花（晓村）" class="headerlink" title="吉野凛花（晓村）"></a>吉野凛花（晓村）</h3><a href="/2020/04/11/bee31/27.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/27.png"></a>
+
+<ul>
+<li>流派：梦想夕云流</li>
+<li>武器：暗路薙彻（暗路乕彻）</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="沙耶"><a href="#沙耶" class="headerlink" title="沙耶"></a>沙耶</h3><ul>
+<li>流派：慈梵式相杀术</li>
+<li>武器：止燕飞燕</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="伊贺忍军"><a href="#伊贺忍军" class="headerlink" title="伊贺忍军"></a>伊贺忍军</h3><a href="/2020/04/11/bee31/51.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/51.jpg"></a>
+
+<ul>
+<li>流派：伊贺流</li>
+<li>武器：无名 忍者刀</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="侍"><a href="#侍" class="headerlink" title="侍"></a>侍</h3><a href="/2020/04/11/bee31/52.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/52.jpg"></a>
+
+<ul>
+<li>流派：防人杀枪术</li>
+<li>武器：直枪</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="陀流磨"><a href="#陀流磨" class="headerlink" title="陀流磨"></a>陀流磨</h3><ul>
+<li>流派：天念流居合术</li>
+<li>武器：棍头枪·影千代</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="胧众"><a href="#胧众" class="headerlink" title="胧众"></a>胧众</h3><a href="/2020/04/11/bee31/24.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/24.jfif"></a>
+
+<ul>
+<li>流派：胧流剑舞术</li>
+<li>武器：忍太刀 瞑螺</li>
+</ul>
+<p>其他信息不详，可评论补充。</p>
+<h3 id="大熊猫"><a href="#大熊猫" class="headerlink" title="大熊猫"></a>大熊猫</h3><ul>
+<li>流派：发劲暗杀拳</li>
+<li>武器：满贯爪</li>
+</ul>
+<h3 id="无限示"><a href="#无限示" class="headerlink" title="无限示"></a>无限示</h3><a href="/2020/04/11/bee31/16.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/16.png"></a>
+
+<ul>
+<li>流派：没有（狂喜流）</li>
+<li>武器：极彩丸（GOKUSAI-MARU）</li>
+</ul>
+<h2 id="侍魂：零"><a href="#侍魂：零" class="headerlink" title="侍魂：零"></a>侍魂：零</h2><h3 id="德川庆寅"><a href="#德川庆寅" class="headerlink" title="德川庆寅"></a>德川庆寅</h3><a href="/2020/04/11/bee31/34.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/34.jpg"></a>
+
+<ul>
+<li>流派：我流（基于柳生十兵衛传授的剑术）</li>
+<li>武器：撫子·白百合·牡丹·椿·朝顔·夕顔·慶寅（七把刀）</li>
+</ul>
+<a href="/2020/04/11/bee31/7.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/7.png"></a>
+
+<p>德川庆寅为次代征夷大将军的人选，为调查及阻止凶国日轮守我旺谋反而离开江户，并在日本各地和许多人物对决。</p>
+<p>德川庆寅的特色是身上共有长短不一的7把太刀（背後5把，腰间2把），分别名为「抚子」、「白百合」、「牡丹」、「椿」、「朝颜」、「夕颜」、「庆寅」。除「庆寅」外，其馀6把皆为其6位恋人的名字。另外此7把太刀皆有其独特的绝招，尤其是第7把「庆寅」，为剑身最长的一把，其绝招即为著名的<a href="https://www.bilibili.com/video/BV1G4411o7UE/?spm_id_from=trigger_reload" target="_blank" rel="noopener">「游蝶华」</a>。</p>
+<h3 id="妖怪腐外道"><a href="#妖怪腐外道" class="headerlink" title="妖怪腐外道"></a>妖怪腐外道</h3><a href="/2020/04/11/bee31/35.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/35.jpg"></a>
+
+<ul>
+<li>流派：食欲</li>
+<li>武器：露出的骨头</li>
+</ul>
+<a href="/2020/04/11/bee31/36.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/36.jpg"></a>
+
+<p>永无止境的饥饿感充斥着巨大而肿胀的畸形身体，在妖怪腐外道的眼里，只有食物，永远不会停止……..</p>
+<h3 id="万-三九六"><a href="#万-三九六" class="headerlink" title="万 三九六"></a>万 三九六</h3><a href="/2020/04/11/bee31/8.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/8.png"></a>
+
+<ul>
+<li>流派：世界最强流（鼻祖）</li>
+<li>武器：天下逸品</li>
+</ul>
+<p>万 三九六本身是个山贼，拥有许多小弟，武器是一把大木锤。我旺叛乱之时表面上愿意加入我旺大军为其效力，其实是想找机会篡位。与霸王丸交过手，此人欺软怕硬，见强劲的对手就会呼唤小弟突然袭击，抱住对方身体使其无法动弹，最后掏出洋手枪来了结。</p>
+<h3 id="罗刹丸"><a href="#罗刹丸" class="headerlink" title="罗刹丸"></a>罗刹丸</h3><a href="/2020/04/11/bee31/38.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/38.jpg"></a>
+
+<ul>
+<li>流派：非常忠实于自己杀人的欲望</li>
+<li>武器：妖刀·屠痢兜</li>
+</ul>
+<a href="/2020/04/11/bee31/37.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/37.jpg"></a>
+
+<p>因为霸王丸强大的精神力而从魔界诞生的复制人，本身代表著霸王丸负面的姿态，双眼血红，皮肤青紫，极度的嗜杀嗜血，为了抹杀霸王丸的存在而追杀霸王丸至人间。</p>
+<h3 id="蕾娜（-蕾拉）"><a href="#蕾娜（-蕾拉）" class="headerlink" title="蕾娜（    蕾拉）"></a>蕾娜（    蕾拉）</h3><a href="/2020/04/11/bee31/11.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/11.png"></a>
+
+<ul>
+<li>流派：SHIKANNA-KAMUI流刀舞术</li>
+<li>武器：宝刀·CHICHI-USHI</li>
+</ul>
+<a href="/2020/04/11/bee31/21.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/21.jfif"></a>
+
+<p>蕾娜是双重性格的娜可露露的第二性格。在《侍魂0》中正式将娜可露露的第二性格分离为蕾娜，守护狼希克鲁也一直跟随，为守护自然而奋斗并坚信着“弱肉强食”的自然规则。比起娜可露露的善良与温柔，蕾娜更像是为了自然而战斗的无畏战士。\</p>
+<h3 id="黑河内梦路"><a href="#黑河内梦路" class="headerlink" title="黑河内梦路"></a>黑河内梦路</h3><a href="/2020/04/11/bee31/5.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/5.jpeg"></a>
+
+<ul>
+<li>流派：神梦想一刀流</li>
+<li>武器：无名</li>
+</ul>
+<a href="/2020/04/11/bee31/40.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/40.jpg"></a>
+<a href="/2020/04/11/bee31/12.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/12.png"></a>
+
+<p>神梦想一刀流中的天才剑士，性格稳重有礼，十五岁时由于某种原因而被赶出家门，在流浪各地后遇见凶国日轮守我旺，因而成为其家臣，为了日轮守我旺也可以将小孩子杀掉；设定上，梦路对我旺相当的依赖，其精神面上有点脆弱且不成熟。出现在侍魂零和天下一剑客传中，侍魂零的第二个小BOSS</p>
+<h3 id="凶国日轮守我旺"><a href="#凶国日轮守我旺" class="headerlink" title="凶国日轮守我旺"></a>凶国日轮守我旺</h3><a href="/2020/04/11/bee31/41.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/41.jpg"></a>
+
+<ul>
+<li>流派：凶国院日轮神道流</li>
+<li>武器：鬼十字 四法印</li>
+</ul>
+<a href="/2020/04/11/bee31/22.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/22.jfif"></a>
+
+<p>一个想推翻德川幕府的人，名字解释：所属凶国，职位是 日轮守 即城主，名 我旺。<br>被恶魔暗之皇附身，企图推翻德川幕府，但最后被打败。暗之皇 附身到刘云飞 身上，与 云飞 同归于尽。<br>暗皇被云飞吸到自己身上之后，我旺拼了命击败了暗皇，之后我旺也被吸入魔界，后我旺为了保护现世在魔界继续战斗，最终征服并统一了魔界。</p>
+<h3 id="刘云飞"><a href="#刘云飞" class="headerlink" title="刘云飞"></a>刘云飞</h3><a href="/2020/04/11/bee31/42.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/42.jpg"></a>
+
+<ul>
+<li>流派：天仙遁甲</li>
+<li>武器：天闪燕巧</li>
+</ul>
+<p>千年前受到闇皇的控制，并且使中国全境陷入混乱，最后被手下八弟子亲手封印，千年后因为感觉到闇皇的气息而再度苏醒，为了赎罪立刻飞往倭国。</p>
+<h3 id="真镜名·弥娜"><a href="#真镜名·弥娜" class="headerlink" title="真镜名·弥娜"></a>真镜名·弥娜</h3><a href="/2020/04/11/bee31/43.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/43.jpg"></a>
+
+<ul>
+<li>流派：秘道弓张月</li>
+<li>武器：镇圣</li>
+</ul>
+<a href="/2020/04/11/bee31/44.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/44.jpg"></a>
+
+<p>她是琉球王国的灭妖师，但由于自身强大的灵力而遭到众人的疏远，唯一的亲友就是在身旁的小精灵恰布鲁。</p>
+<h2 id="侍魂：天下一剑客传"><a href="#侍魂：天下一剑客传" class="headerlink" title="侍魂：天下一剑客传"></a>侍魂：天下一剑客传</h2><h3 id="机巧麻吕"><a href="#机巧麻吕" class="headerlink" title="机巧麻吕"></a>机巧麻吕</h3><a href="/2020/04/11/bee31/13.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/13.png"></a>
+
+<ul>
+<li>流派：里式神乐雅</li>
+<li>武器：铁扇：切铁翁·里铁妪；齿车：黑铁铸造刃金烧入白银齿</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="祭囃子双六"><a href="#祭囃子双六" class="headerlink" title="祭囃子双六"></a>祭囃子双六</h3><a href="/2020/04/11/bee31/14.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/14.png"></a>
+
+<ul>
+<li>流派：祭囃子家 家训·男子的三条心得</li>
+<li>武器：祭囃子一发</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="安德鲁"><a href="#安德鲁" class="headerlink" title="安德鲁"></a>安德鲁</h3><ul>
+<li>流派：WHITE LILY</li>
+<li>武器：家族世代相传下来的铳剑术</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="伊吕波"><a href="#伊吕波" class="headerlink" title="伊吕波"></a>伊吕波</h3><a href="/2020/04/11/bee31/46.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/46.jpg"></a>
+
+<ul>
+<li>流派：为了主人拼命努力</li>
+<li>武器：凤麟·凰嘴（ほうりん·おうさい）</li>
+</ul>
+<p>伊吕波本来是一只仙鹤，受伤后被一个青年所救，为了报恩，她变成女仆来到了青年的身边。这时，德川庆寅宣布：“时间是天明，舞台是世界，目标是天下第一”。胜者可以实现最大的心愿，并得到天下无双的证明和黄金千两、米千石。伊吕波成为青年的女仆后，一开始很美满，但是青年逐渐变得郁闷起来，问他，他也只是说没事（其实只是陷入了初恋，心烦意乱不知该怎么办好）。伊吕波觉得自己帮不上旦那さま的忙，于是在一天夜里离开了青年，跑去参加天下第一比武大会。</p>
+<a href="/2020/04/11/bee31/47.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/47.jpg"></a>
+
+<p>取得胜利之后，伊吕波告诉德川庆寅，她希望实现的愿望是让旦那さま幸福。然后她返回家中向青年表明身世并向青年告别。数个月后，她又偷偷跑回来确认青年是否幸福，这时德川庆寅出现，告诉她他不在的时候青年比以前更难过，因为青年烦恼的原因就是喜欢上了她。于是伊吕波回到了青年的身边。</p>
+<h3 id="真．我旺"><a href="#真．我旺" class="headerlink" title="真．我旺"></a>真．我旺</h3><a href="/2020/04/11/bee31/49.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/49.jpg"></a>
+
+<ul>
+<li>流派：凶国院日轮神道流</li>
+<li>武器：鬼十字 四法印</li>
+</ul>
+<p>其他信息不明，待补充。</p>
+<h2 id="侍魂：闪"><a href="#侍魂：闪" class="headerlink" title="侍魂：闪"></a>侍魂：闪</h2><h3 id="猛千代"><a href="#猛千代" class="headerlink" title="猛千代"></a>猛千代</h3><a href="/2020/04/11/bee31/28.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/28.png"></a>
+
+<ul>
+<li>流派：剑术</li>
+<li>武器：猛打木刀</li>
+</ul>
+<a href="/2020/04/11/bee31/53.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/53.jpg"></a>
+
+<h3 id="铃姫"><a href="#铃姫" class="headerlink" title="铃姫"></a>铃姫</h3><a href="/2020/04/11/bee31/54.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/54.jpg"></a>
+
+<ul>
+<li>流派：居合术+剑术（天降流+我流）</li>
+<li>武器：中华巨刃&amp;短笛</li>
+</ul>
+<a href="/2020/04/11/bee31/55.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/55.jpg"></a>
+
+<p>铃姬4岁的时候，与父母一起坐船旅行，座船被人袭沉后漂流到日本近海的天降藩，从而被藩主收养。长大后私自离家出游，在海边救下猛千代。</p>
+<p> 从猛千代口中获知叔父戈尔巴的消息，于是追索而去。 闪侍的最终BOSS是铃姬的叔父戈尔巴将军，当年篡权杀害了铃姬的父母。而铃姬则在侍卫克洛德的保护下逃亡到日本天降藩，并被藩主抚养长大。</p>
+<h3 id="黑鹰"><a href="#黑鹰" class="headerlink" title="黑鹰"></a>黑鹰</h3><a href="/2020/04/11/bee31/29.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/29.png"></a>
+
+<ul>
+<li>流派：双手舞斧术</li>
+<li>武器：印第安战斧</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="安洁莉卡"><a href="#安洁莉卡" class="headerlink" title="安洁莉卡"></a>安洁莉卡</h3><a href="/2020/04/11/bee31/30.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/30.png"></a>
+
+<ul>
+<li>流派：暗杀术</li>
+<li>武器：双刃柄枪</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="奇里安（吉利安）"><a href="#奇里安（吉利安）" class="headerlink" title="奇里安（吉利安）"></a>奇里安（吉利安）</h3><a href="/2020/04/11/bee31/31.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/31.png"></a>
+
+<ul>
+<li>流派：西洋剑术</li>
+<li>武器：西洋剑</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="格罗斯（加洛斯）"><a href="#格罗斯（加洛斯）" class="headerlink" title="格罗斯（加洛斯）"></a>格罗斯（加洛斯）</h3><a href="/2020/04/11/bee31/32.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/32.png"></a>
+
+<ul>
+<li>流派：维京格斗术</li>
+<li>武器：战斧</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="克劳德（克洛德）"><a href="#克劳德（克洛德）" class="headerlink" title="克劳德（克洛德）"></a>克劳德（克洛德）</h3><a href="/2020/04/11/bee31/33.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/33.png"></a>
+
+<ul>
+<li>流派：佛生寺流</li>
+<li>武器：日本刀无铭</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="J"><a href="#J" class="headerlink" title="J"></a>J</h3><a href="/2020/04/11/bee31/34.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/34.png"></a>
+
+<ul>
+<li>流派：月诛流</li>
+<li>武器：日本刀艾维斯</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="金海澪"><a href="#金海澪" class="headerlink" title="金海澪"></a>金海澪</h3><ul>
+<li>流派：棒术</li>
+<li>武器：双刃长矛</li>
+</ul>
+<h3 id="菅又刃兵卫"><a href="#菅又刃兵卫" class="headerlink" title="菅又刃兵卫"></a>菅又刃兵卫</h3><a href="/2020/04/11/bee31/35.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/35.png"></a>
+
+<ul>
+<li>流派：御矛术</li>
+<li>武器：金刚</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="维尔达"><a href="#维尔达" class="headerlink" title="维尔达"></a>维尔达</h3><a href="/2020/04/11/bee31/36.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/36.png"></a>
+
+<ul>
+<li>流派：红狮子流佣兵术</li>
+<li>武器：长剑&amp;巨盾</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="德拉古"><a href="#德拉古" class="headerlink" title="德拉古"></a>德拉古</h3><a href="/2020/04/11/bee31/37.png" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/37.png"></a>
+
+<ul>
+<li>流派：火枪术+掷币术</li>
+<li>武器：火枪</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h3 id="戈巴"><a href="#戈巴" class="headerlink" title="戈巴"></a>戈巴</h3><ul>
+<li>流派：禁卫军剑术</li>
+<li>武器：西洋剑</li>
+</ul>
+<p>背景信息不详，评论可补充。</p>
+<h2 id="侍魂：晓"><a href="#侍魂：晓" class="headerlink" title="侍魂：晓"></a>侍魂：晓</h2><h3 id="吴瑞香"><a href="#吴瑞香" class="headerlink" title="吴瑞香"></a>吴瑞香</h3><a href="/2020/04/11/bee31/25.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/25.jfif"></a>
+
+<ul>
+<li>流派：吴派招龙风水术</li>
+<li>武器：超级·招龙罗盘</li>
+</ul>
+<p>侍奉清帝国的女子，历史悠久的风水师家族后裔，代代以守护龙脉为使命。</p>
+<a href="/2020/04/11/bee31/8.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/8.jpeg"></a>
+
+<p>接受乾隆帝的命令探访九州四海；个性贤明却有非常迷糊的一面。<br>另外，由于总是窝在房间里，非常不擅长运动。<br>拥有帝国第一的风水术，能显现神兽之力。</p>
+<h3 id="妲丽·刀伽"><a href="#妲丽·刀伽" class="headerlink" title="妲丽·刀伽"></a>妲丽·刀伽</h3><a href="/2020/04/11/bee31/26.jfif" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/26.jfif"></a>
+
+<ul>
+<li>流派：我流</li>
+<li>武器：利帕塔利亚(别称：自由国度)</li>
+</ul>
+<p>妲丽·刀伽能熟练使用各种工具的船匠，从年幼时漂流到岛上的木匠那学习制作物品的能力。<br>从海盗那边学会防身的技术与生存的智慧。现于岛上的工房和伙伴们一起造船。<br>听说造出的船不论发生什么事都不会沉没，因此委托造船的人络绎不绝。。</p>
+<h3 id="鞍马夜叉丸"><a href="#鞍马夜叉丸" class="headerlink" title="鞍马夜叉丸"></a>鞍马夜叉丸</h3><a href="/2020/04/11/bee31/56.jpg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/56.jpg"></a>
+
+<ul>
+<li>流派：鞍马流兵法</li>
+<li>武器：遮那王</li>
+</ul>
+<p>以义贼“乌天狗”的身份活跃，没落的武家青年，特别憎恶仗势欺负弱者的恶人。<br>他的父亲因为背负了莫须有的罪名被幕府处决，因此他对德川幕府有着血海深仇。<br>继承了天狗之力，能够操纵风，在大地与天空之间自由遨翔。</p>
+<h1 id="游戏其他说明"><a href="#游戏其他说明" class="headerlink" title="游戏其他说明"></a>游戏其他说明</h1><h2 id="游戏人物原型"><a href="#游戏人物原型" class="headerlink" title="游戏人物原型"></a>游戏人物原型</h2><ul>
+<li>橘右京——佐佐木小次郎</li>
+<li>霸王丸——宫本武藏</li>
+<li>柳生十兵卫、天草四郎时贞、服部半藏（真实存在）</li>
+</ul>
+<p>注：橘右京在侍魂中的外型和《鲁邦三世》的石川五右卫门非常相似。而霸王丸的形象更加接近于《多罗罗》中的百鬼丸；宫本武藏在腾讯手游王者荣耀里是一名英雄，而霸王丸正好是它的其中一个皮肤。</p>
+<h2 id="游研社-游戏分析"><a href="#游研社-游戏分析" class="headerlink" title="游研社-游戏分析"></a>游研社-游戏分析</h2><p>游研社：研社的主要业务方向是游戏领域的原创PGC内容制作。即通过文章、视频甚至当下最流行的直播作为内容的载体，致力于传播专业的、有趣的、有价值的内容给喜欢游戏的玩家们，从而影响更广泛的用户。<a href="https://www.yystv.cn/" target="_blank" rel="noopener">官网点击</a></p>
+<iframe src="//player.bilibili.com/player.html?aid=47016672&bvid=BV1ub41177ox&cid=82336860&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="417px"> </iframe>
+
+
+
+<h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="https://samuraianiv.snk-corp.co.jp/" target="_blank" rel="noopener">点击进入Samurai Shodown</a> </p>
+<h1 id="游戏评价"><a href="#游戏评价" class="headerlink" title="游戏评价"></a>游戏评价</h1><a href="/2020/04/11/bee31/9.jpeg" data-fancybox="group" data-caption="undefined" class="fancybox"><img class="lazyload" data-src="/2020/04/11/bee31/9.jpeg"></a>
+
+<p>《侍魂：晓》手感还算不错，整体沿袭了《侍魂》经典的刀剑格斗风格，轻刀利索重刀有力，本作的连段系统也回归了经典的《侍魂》模式，所以相对于其他格斗游戏会比较少，每个角色的招式表也非常简单，推波和升龙的操作对于格斗游戏玩家来说肯定不会陌生。<a href="https://baijiahao.baidu.com/s?id=1638032196756151439&wfr=spider&for=pc" target="_blank" rel="noopener">极上之斩</a></p>
+<p>其他评价——略</p>
+<p><strong>文章内容摘自：游民星空、百度百科、维基百科、哔哩哔哩弹幕网等</strong></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Bee</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://thebee.fun/2020/04/11/bee31/">http://thebee.fun/2020/04/11/bee31/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://thebee.fun">The Bee</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B8%B8%E6%88%8F/">游戏    </a><a class="post-meta__tags" href="/tags/SNK/">SNK    </a><a class="post-meta__tags" href="/tags/%E6%A0%BC%E6%96%97/">格斗    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee31.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg" alt="支付寶"><div class="post-qr-code__desc">支付寶</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2020/04/09/bee30/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee30.jfif" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>人物志 《火影忍者》—— 宇智波鼬</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/03/06/bee16/" title="游戏介绍    SNK系列——《合金弹头》"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee16.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-06</div><div class="relatedPosts_title">游戏介绍    SNK系列——《合金弹头》</div></div></a></div><div class="relatedPosts_item"><a href="/2020/03/20/bee18/" title="游戏推荐  《Devil may cry 5》"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee18.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-20</div><div class="relatedPosts_title">游戏推荐  《Devil may cry 5》</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'xva9iivKqITTBeBBcI9TYIpm-MdYXbMMI',
+  appKey:'yqN5Jq3ug0cdQwvyxW4TECs5',
+  placeholder:'Please leave your footprints, thank you',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/devil-trigger/sdn@master/Thebee-cover/bee31.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 By Bee</div><div class="footer_custom_text">Hi, welcome to My <a href="http://thebee.fun/">blog</a>!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":145,"height":270},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
